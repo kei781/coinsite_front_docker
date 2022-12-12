@@ -1,0 +1,539 @@
+.Layoutcenter {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  width: 100%;
+  .Layoutsson {
+    border: 1px solid rgb(236, 234, 234);
+    height: 100vh;
+    width: 0%;
+  }
+  .asdasd {
+    width: 300px;
+    height: 100%;
+    margin: 30px;
+  }
+  .Sidbar {
+    width: 100%;
+    .Sidbarss {
+      box-shadow: rgba(0, 0, 0, 0.1) 10px 10px 100px 10px;
+    }
+    .Sidbarss1 {
+      text-align: center;
+      margin-top: 5px;
+      margin-bottom: 20px;
+      color: #868e96;
+      align-items: center;
+      font-size: small;
+      .Sidbarss1icon {
+        font-size: 17px;
+        margin-top: -4.3px;
+      }
+      .Sidbarss1span {
+        color: blue;
+      }
+    }
+    .Sidbarbanner {
+      width: 100%;
+      margin-bottom: 20px;
+      margin-right: 10px;
+      color: #9a62e6;
+      img {
+        width: 100%;
+      }
+    }
+    .SidbarNotice {
+      border-radius: 5px 5px 5px 5px;
+      box-shadow: rgba(0, 0, 0, 0.1) 10px 10px 100px 10px;
+      background-color: white;
+      margin-bottom: 20px;
+      height: 240px;
+      div {
+        font-size: 15px;
+        font-weight: 600;
+      }
+      div:nth-child(1) {
+        font-weight: bold;
+        padding: 10px 0px 10px 20px;
+        border-bottom: 1px solid rgb(231, 231, 229);
+      }
+      div:nth-child(2) {
+        padding: 12px 1px 12px 20px;
+        font-size: 13px;
+        max-width: 290px;
+
+        text-overflow: ellipsis;
+        overflow: hidden;
+        height: 30px;
+      }
+      div:nth-child(3) {
+        padding: 12px 1px 12px 20px;
+        font-size: 13px;
+        max-width: 290px;
+
+        text-overflow: ellipsis;
+        overflow: hidden;
+        height: 30px;
+      }
+      div:nth-child(4) {
+        padding: 12px 1px 12px 20px;
+        font-size: 13px;
+        max-width: 290px;
+
+        text-overflow: ellipsis;
+        overflow: hidden;
+        height: 30px;
+      }
+      div:nth-child(5) {
+        margin-top: 10px;
+        padding: 12px 10px 12px 20px;
+        border-top: 1px solid rgb(231, 231, 229);
+      }
+      div:nth-child(6) {
+        font-weight: bold;
+        padding: 12px 10px 12px 20px;
+        border-top: 1px solid rgb(231, 231, 229);
+      }
+    }
+    .advertisement {
+      box-shadow: rgba(0, 0, 0, 0.05) 0 6px 24px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+body {
+  background-color: #fafafa;
+}
+.Contents {
+  width: 70%;
+  padding: 30px;
+}
+.footer_maindav {
+  width: 100%;
+  margin-top: 60px;
+  background-color: white;
+  height: 60px;
+  width: 100%;
+  line-height: 60px;
+  color: rgb(160, 160, 160);
+  border-top: 1px solid #dee5e7;
+  background-color: white;
+
+  .footer_div11 {
+    margin-left: 0%;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+
+    div {
+      a {
+        font-size: 15px;
+
+        padding: 20px;
+      }
+    }
+  }
+}
+
+.navbar {
+  height: 70px;
+  border-bottom: 0.5px solid rgb(231, 228, 228);
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #555;
+  font-weight: bold;
+  text-align: center;
+  background-color: #212529;
+  color: #868e96;
+  margin-right: 30px;
+
+  .Heder_Loging_button {
+    border: none;
+  }
+
+  .wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    height: 100%;
+    max-width: 1200px;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    margin-left: auto;
+    margin-right: auto;
+
+    .items {
+      display: flex;
+      padding: 20px;
+
+      align-items: center;
+
+      .item {
+        display: flex;
+
+        font-size: 18px;
+        align-items: center;
+
+        .icon {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+.search1 {
+  input {
+    margin: 5px 0px 0px 10px;
+    text-align: center;
+    align-items: center;
+    background-color: #212529;
+  }
+}
+.Hader_Login1 {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 0px 0px 0px 0px;
+  width: 180px;
+}
+
+.Login {
+  width: 100%;
+}
+
+.text-lg {
+  text-align: center;
+}
+
+p {
+  .Login_input1 {
+    margin-top: 10px;
+    margin-bottom: 60px;
+
+    border-bottom: 1px solid #999999;
+  }
+  .Login_input {
+    margin-top: 20px;
+    margin-bottom: 0px;
+    border-bottom: 1px solid #999999;
+  }
+
+  .loginId {
+    width: 100%;
+    padding: 9px 12px;
+    text-align: center;
+  }
+  .loginPw {
+    text-align: center;
+    padding: 9px 12px;
+    width: 100%;
+  }
+
+  .loginBtn {
+    width: 100%;
+    font-size: 14px;
+    padding: 20px 30px;
+    background-color: black;
+    color: white;
+    align-items: center;
+    line-height: 1px;
+    margin-top: 20px;
+    margin-bottom: 12px;
+    border-radius: 3px;
+    border-style: none;
+  }
+}
+.modal {
+  .modal-box {
+    padding: 40px;
+  }
+}
+
+.socialBox {
+  margin-bottom: 30px;
+  .kakao {
+    background-color: #feec34;
+    border-color: #feec34;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    .kakaoLogo {
+      width: 24px;
+      height: 25px;
+    }
+    .kakaoText {
+      width: 300px;
+      font-size: 15px;
+      text-align: center;
+      display: inline-block;
+      box-sizing: border-box;
+    }
+  }
+}
+
+.socialBox {
+  margin-bottom: 20px;
+  .Google {
+    background-color: white;
+    height: 40px;
+    display: flex;
+    border: 1px solid #dcdcdc;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    margin-top: 10px;
+
+    .GoogleLogo {
+      width: 24px;
+      height: 25px;
+    }
+    .GoogleText {
+      width: 300px;
+      font-size: 15px;
+      text-align: center;
+      display: inline-block;
+      box-sizing: border-box;
+    }
+  }
+
+  .kakao {
+    background-color: #feec34;
+    border-color: #feec34;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    border-radius: 3px;
+
+    .kakaoLogo {
+      width: 24px;
+      height: 25px;
+    }
+    .kakaoText {
+      width: 300px;
+      font-size: 15px;
+      text-align: center;
+      display: inline-block;
+      box-sizing: border-box;
+    }
+  }
+
+  .facebook {
+    background-color: #3880ce;
+    border-color: #21538a;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    color: #fff;
+    border-radius: 3px;
+    > .facebookText {
+      padding-top: 12px;
+      width: 310px;
+      color: #fff;
+      font-size: 15px;
+      text-align: center;
+      box-sizing: border-box;
+    }
+    .facebookLogo {
+      padding-top: 7px;
+      width: 24px;
+      align-items: center;
+      margin-left: 7px;
+      height: 30px;
+    }
+  }
+}
+
+.autoLogin {
+  text-align: center;
+}
+.loginLine {
+  text-align: center;
+}
+.loginLine_end {
+  font-size: 14px;
+}
+.LoginNamedaci {
+  width: 100%;
+  flex: 2;
+  font-size: 14px;
+  margin-left: 0px;
+}
+.navbar_span {
+  font-size: 17px;
+  margin-right: 5px;
+}
+.menu {
+  .flex {
+    li {
+      a {
+      }
+      a:hover {
+        color: white;
+      }
+    }
+  }
+}
+.navbarRogo {
+  margin-right: 20px;
+  margin-top: 4px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 260px;
+  background-color: white;
+  word-break: break-all;
+  border: 1px solid #e6e6e6;
+}
+.bloc-tabs {
+  display: flex;
+  background-color: white;
+  font-weight: bold;
+  button {
+    background-color: white;
+  }
+}
+
+// 텝바
+.tabs {
+  padding: 10px;
+  text-align: center;
+  background: rgba(128, 128, 128, 0.075);
+  cursor: pointer;
+  box-sizing: content-box;
+  position: relative;
+  outline: none;
+  border-radius: 15%;
+  margin: 5px 5px;
+}
+.tabs:hover {
+  background-color: rgb(199, 199, 199);
+}
+
+.content {
+  background: white;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+.content h2 {
+  padding: 0px 0 5px 0px;
+}
+.content hr {
+  width: 100px;
+  height: 2px;
+
+  margin-bottom: 5px;
+}
+.content p {
+  width: 100%;
+  height: 300px;
+}
+.active-content {
+  display: block;
+}
+.cointable {
+  thead {
+    tr {
+      font-size: 13px;
+      th:nth-child(1) {
+        width: 20%;
+      }
+      th:nth-child(2) {
+        width: 20%;
+      }
+      th:nth-child(3) {
+        width: 20%;
+      }
+      th:nth-child(4) {
+        width: 20%;
+      }
+    }
+  }
+}
+.ssdmjvnslkeuh3 {
+  height: 500px;
+}
+
+.aaaaaaa {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  font-weight: bold;
+  color: #868e96;
+
+  .first_name {
+    width: 50px;
+    white-space: nowrap;
+  }
+  .aaa1 {
+    margin-left: auto;
+    margin-right: 0;
+    text-align: right;
+  }
+  div {
+    span {
+      padding: 0 5px;
+    }
+    .span_high {
+      color: red;
+    }
+    .span_low {
+      color: blue;
+    }
+  }
+  .img_box {
+    width: 50px;
+    height: 50px;
+    .logo_img {
+      border-radius: 50%;
+      width: 70%;
+      margin: 0 auto;
+      margin-top: 5px;
+    }
+    .logo_img_sam {
+      width: 80%;
+      margin: 0 auto;
+      margin-top: 22px;
+    }
+    .logo_img_kakao {
+      width: 80%;
+      margin: 0 auto;
+      margin-top: 18px;
+    }
+  }
+}
+
+.border_line {
+  background-color: #f0f3fa;
+  height: 1px;
+  margin: 0 10px;
+}
+.Newsimg {
+  font-weight: bold;
+}
+.Newsimgdiv {
+  width: 100%;
+  a:nth-child(1) {
+    margin-top: 10px;
+  }
+}
+
+.navbar_span :hover {
+  color: white;
+}

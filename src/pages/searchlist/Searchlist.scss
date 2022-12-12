@@ -1,0 +1,148 @@
+.Searchlist {
+  height: 100%;
+
+  width: 100%;
+  .Searchlist_div {
+    input {
+      border-color: #cccccc;
+      display: inline-block;
+      width: 100%;
+      max-width: 400px;
+      padding: 12px 18px;
+      margin-right: 10px;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 1.5;
+      border-radius: 4px;
+      border-width: 1px;
+      border-style: solid;
+      border-color: #ededed;
+      -webkit-transition: all 0.2s;
+      -moz-transition: all 0.2s;
+      -o-transition: all 0.2s;
+      transition: all 0.2s;
+      color: black !important;
+    }
+    button {
+      background-color: #7d1fe0;
+      display: inline-block;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 1.4;
+      text-align: center;
+      padding: 12px 18px;
+      border-radius: 4px;
+      border-width: 1px;
+      border-style: solid;
+      border-color: #ededed;
+      text-decoration: none !important;
+      -webkit-transition: all 0.2s;
+      -moz-transition: all 0.2s;
+      -o-transition: all 0.2s;
+      transition: all 0.2s;
+      color: white;
+    }
+  }
+}
+
+.Searchlistssds3 {
+  color: #7d1fe0;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+.earchlistMain {
+  div:nth-child(1) {
+    color: #0c43b7;
+    margin-top: 20px;
+    font-size: 17px;
+    margin-bottom: 5px;
+  }
+}
+.Searchlisttitlle {
+  font-size: 25px;
+  margin-bottom: 0px;
+  align-items: center;
+}
+
+.Searchlistmide {
+  margin-top: 30px;
+  .Searchlistmide_Div {
+    margin-bottom: 0px;
+    font-size: 25px;
+    align-items: center;
+  }
+  .BoardTbody10 {
+    border: 1px solid red;
+  }
+}
+
+.SearchlistmideHr {
+  border-bottom: 1px solid #e6dfdf;
+  margin-top: 60px;
+}
+
+.BoardTbody10 {
+  .djdjfl23 {
+    div {
+      width: 100%;
+    }
+    div:nth-child(1) {
+      color: #0c43b7;
+      margin-top: 20px;
+      font-size: 17px;
+      margin-bottom: 5px;
+    }
+    span:nth-child(2) {
+      color: #999 !important;
+      font-size: 12px;
+      margin-right: 10px;
+    }
+    span:nth-child(3) {
+      color: #999 !important;
+      font-size: 12px;
+      margin-right: 10px;
+    }
+    span:nth-child(4) {
+      color: #999 !important;
+      font-size: 12px;
+    }
+
+    div:nth-child(5) {
+      font-weight: 100;
+      font-size: 15px;
+      text-overflow: inherit;
+      overflow: hidden;
+      height: 60px;
+      overflow: hidden;
+    }
+  }
+}
+
+.BoardTbody5 {
+  tr {
+    width: 100%;
+
+    div {
+    }
+    div:nth-child(1) {
+      color: #0c43b7;
+      margin-top: 20px;
+      font-size: 17px;
+      margin-bottom: 5px;
+      overflow: hidden;
+      height: 20px;
+      max-height: 40px;
+      overflow: hidden;
+    }
+    span:nth-child(2) {
+      color: #999 !important;
+      font-size: 12px;
+      margin-right: 10px;
+    }
+    span:nth-child(3) {
+      color: #999 !important;
+      font-size: 12px;
+    }
+  }
+}

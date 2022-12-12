@@ -1,0 +1,216 @@
+.Privacy {
+  .top {
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 10px 10px 1000px 10px;
+    height: 340px;
+    background-color: white;
+    h1 {
+      border-bottom: 1px solid rgb(231, 231, 229);
+      font-weight: 900;
+      font-size: 20px;
+      padding: 20px 20px 20px 20px;
+    }
+    h2 {
+      margin-top: 30px;
+    }
+    h3 {
+      margin-top: 20px;
+      padding: 0px 20px 0px 20px;
+      margin-bottom: 30px;
+      font-size: 15px;
+
+      span {
+        color: red;
+        font-size: 18px;
+      }
+      .sdad45 {
+        color: #7d1fe0;
+      }
+    }
+  }
+  .botton {
+    border-radius: 5px 5px 5px 5px;
+    height: 540px;
+    background-color: white;
+  }
+
+  .bottonMain {
+    border-bottom: 1px solid rgb(231, 231, 229);
+    font-weight: 900;
+    font-size: 20px;
+    padding: 20px 20px 20px 20px;
+  }
+  form {
+    padding: 0px 20px 20px 20px;
+
+    .formInput {
+      width: 100%;
+      display: flex;
+      margin: 30px;
+      align-items: center;
+
+      label {
+        width: 130px;
+      }
+      .name {
+        margin-right: 50px;
+        font-weight: bold;
+        font-size: 15px;
+      }
+      input {
+        border: 1px solid red;
+        align-items: center;
+        border-color: #cccccc;
+        width: 40%;
+        max-width: 400px;
+        padding: 10px 15px;
+        margin-right: 30px;
+        font-size: 14px;
+        font-weight: 500;
+        border-color: #ededed;
+      }
+    }
+    h4 {
+      color: red;
+      font-size: 13px;
+    }
+  }
+  .buttonDiv {
+    text-align: end;
+    margin: 20px 30px 0px 0px;
+    button {
+      background-color: #7d1fe0;
+      display: inline-block;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 1.4;
+      text-align: center;
+      padding: 12px 18px;
+      border-radius: 4px;
+      border-width: 1px;
+      border-style: solid;
+      border-color: #ededed;
+      text-decoration: none !important;
+      transition: all 0.2s;
+      color: white;
+    }
+    .buttonDivsds2 {
+      margin-left: 20px;
+      background-color: red;
+      display: inline-block;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 1.4;
+      text-align: center;
+      padding: 12px 18px;
+      border-radius: 4px;
+      border-width: 1px;
+      border-style: solid;
+
+      text-decoration: none !important;
+      transition: all 0.2s;
+      color: white;
+    }
+  }
+  .Privacybutton {
+    background-color: #7d1fe0;
+    font-size: 14px;
+
+    margin-left: 30px;
+    font-weight: 500;
+    line-height: 1;
+    text-align: center;
+    padding: 10px 15px;
+    border-radius: 4px;
+    border-color: #ededed;
+    color: white;
+  }
+
+  .Privacybutton1 {
+    background-color: red;
+    font-size: 14px;
+    margin-left: 30px;
+    font-weight: 500;
+    line-height: 1;
+    text-align: center;
+    padding: 10px 15px;
+    border-radius: 4px;
+    border-color: #ededed;
+    color: white;
+  }
+  .formInputsd2 {
+  }
+  .formInput {
+    label {
+      font-size: 13px;
+    }
+    div {
+      font-size: 14px;
+    }
+  }
+
+  .bloc-tabs10 {
+    display: flex;
+    margin-top: 50px;
+
+    button {
+    }
+    button:nth-child(1) {
+      background-color: #7d1fe0;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 1;
+      text-align: center;
+      padding: 10px 15px;
+      border-radius: 4px;
+
+      color: white;
+    }
+    button:nth-child(2) {
+      background-color: red;
+      font-size: 14px;
+      margin-left: 00px;
+      font-weight: 500;
+      line-height: 1;
+      text-align: center;
+      padding: 10px 15px;
+      border-radius: 4px;
+
+      color: white;
+    }
+  }
+}
+.botton1 {
+  border-radius: 5px 5px 5px 5px;
+  height: 350px;
+  width: 100%;
+  background-color: white;
+  .right1 {
+    width: 100%;
+  }
+  .sda23sbutton {
+    text-align: end;
+    background-color: red;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.4;
+    text-align: center;
+    padding: 12px 18px;
+    border-radius: 4px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #ededed;
+    text-decoration: none !important;
+    transition: all 0.2s;
+    color: white;
+  }
+}
+.reset2div {
+  text-align: end;
+  margin-right: 30px;
+  margin-top: -20px;
+}

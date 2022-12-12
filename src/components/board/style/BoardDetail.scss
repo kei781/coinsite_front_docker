@@ -1,0 +1,220 @@
+.DetailPage {
+  border-radius: 5px 5px 5px 5px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 10px 10px 10px;
+
+  background-color: white;
+
+  max-height: 2000px;
+  padding: 30px 30px 1px 30px;
+
+  .DetailPageTitle {
+    font-size: 30px;
+    font-weight: bold;
+  }
+}
+.DetailPagelist {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  .DetailPagelistdiv {
+    width: 100%;
+
+    span:nth-child(1) {
+      font-weight: bold;
+      font-size: 17px;
+    }
+  }
+  .asddgiuhi23 {
+    display: flex;
+    margin-top: 10px;
+    width: 100%;
+    span:nth-child(1) {
+      color: #868e96;
+
+      font-size: 12px;
+      margin-right: 20px;
+    }
+    span:nth-child(2) {
+      color: #868e96;
+      width: 70px;
+      font-size: 12px;
+    }
+    span:nth-child(3) {
+      color: black;
+
+      font-size: 12px;
+    }
+  }
+}
+.DetailPage_List_cjah {
+  width: 100%;
+
+  margin: 20px;
+  font-size: 14px;
+}
+.DetailPageButton {
+  width: 100%;
+  text-align: end;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.DetailPage_Booot {
+  width: 100%;
+  .DetailPage_BoootMaindiv {
+    width: 100%;
+    font-size: 17px;
+    font-weight: 900;
+    margin-bottom: 10px;
+    display: flex;
+    padding: 15px 0px 5px 20px;
+  }
+}
+
+.DetailPage-div {
+  width: 100%;
+  display: flex;
+  margin-top: 20px;
+  padding: 0px 20px 10px 20px;
+  .DetailPage-mimee {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    color: black;
+    font-size: 0.875rem;
+    border-radius: 6px;
+    border: 1px solid #e9ecef;
+    background-color: #f8f9fa;
+    margin-bottom: 10px;
+  }
+}
+
+.DetailPageTd {
+  text-align: left;
+  border: 1px solid red;
+
+  span:nth-child(1) {
+    width: 100%;
+    font-size: 14px;
+    font-weight: 900;
+    margin-top: 30px;
+  }
+  span:nth-child(2) {
+    width: 100%;
+    font-size: 13px;
+    color: #868e96;
+    margin-top: 30px;
+  }
+}
+.DetailPage_List_cjah_div {
+  max-height: 100%;
+
+  min-height: 200px;
+}
+.DetailPageList1 {
+  border-radius: 5px 5px 5px 5px;
+
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 10px 10px 10px;
+  margin-bottom: 30px;
+  background-color: white;
+
+  width: 100%;
+}
+.DetailPage_button1 {
+  font-weight: bold;
+  color: white;
+  font-size: 14px;
+  background-color: #9a62e6;
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 2.5rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  text-align: center;
+  outline: none;
+  margin-left: 10px;
+  border-radius: 0.4rem;
+}
+.DetailPageddsa {
+  background-color: #f8f9fa;
+  border-top: 1px solid #f1f3f5;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  box-sizing: border-box;
+  border: 0 solid;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border: 1px;
+}
+.sdsdaw4efr34 {
+  background-color: white;
+  border-top: 1px solid #f1f3f5;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  box-sizing: border-box;
+  border: 0 solid;
+
+  justify-content: flex-end;
+  align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border: 1px;
+  padding: 10px 10px 10px 20px;
+  border-top: 1px solid #e5e7eb;
+  color: #868e96;
+  margin-bottom: 30px;
+  font-weight: bold;
+  .icon {
+    font-size: 15px;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+}
+.DetailPageTddiv {
+  width: 100%;
+
+  min-width: 758px;
+  display: flex;
+  height: 30px;
+
+  padding: 0px 20px 0px 20px;
+
+  button {
+  }
+  div:nth-child(1) {
+    width: 98%;
+    border-bottom: 1px solid #e5e7eb;
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 3px;
+  }
+
+  div:nth-child(2) {
+    border-bottom: 1px solid #e5e7eb;
+  }
+}
+.DetailPageTd_Span1 {
+  padding: 10px 0px 0px 20px;
+}
+.DetailPageButtonend {
+  height: 50px;
+  text-align: end;
+
+  padding: 0px 20px 30px 30px;
+}
+.Deletebuttonor {
+  width: 100%;
+  text-align: end;
+  .DetailPageButton1 {
+    font-weight: bold;
+    margin-right: 30px;
+  }
+  .DetailPageButton2 {
+    font-weight: bold;
+    margin-left: 10px;
+  }
+}

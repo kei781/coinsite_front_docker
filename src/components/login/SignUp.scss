@@ -1,0 +1,121 @@
+.SignUp {
+  width: 100%;
+  height: 100%;
+}
+
+.text-lg {
+  text-align: center;
+}
+
+p {
+  .SignUp_input {
+    margin-top: 10px;
+
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #999999;
+  }
+  .SiguUpBtndiv {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .join_row {
+    text-align: center;
+    width: 100%;
+
+    .Joindiv {
+      margin: 20px 0px 0px 0px;
+      text-align: center;
+    }
+  }
+}
+
+.SignUpBtn1 {
+  width: 100%;
+  height: 0px;
+  font-size: 14px;
+  padding: 17px 30px;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  line-height: 1px;
+  margin-top: 20px;
+  margin-bottom: 12px;
+  border-radius: 3px;
+  border-style: none;
+}
+@media all and (min-width: 1024px) {
+  .input-forms {
+    padding: 70px;
+    input {
+      width: 400px;
+    }
+  }
+}
+@media all and (max-width: 1024px) {
+  .input-forms {
+    padding: 60px;
+    input {
+      width: 330px;
+    }
+  }
+}
+
+@media all and (max-width: 768px) {
+  .input-forms {
+    padding: 50px;
+    input {
+      width: 300px;
+    }
+  }
+}
+.signup-wrapper {
+  font-family: "Noto Sans KR", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .input-forms {
+    background-color: #ffffff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+
+    .input-label {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #282c34;
+    }
+
+    .input-forms-item {
+      padding: 7px 0;
+      .error-message {
+        font-size: 1rem;
+        color: blue;
+        font-weight: bold;
+      }
+    }
+  }
+}
+.SignUp {
+  .SignUplable {
+    font-weight: bold;
+    width: 100px;
+    color: white;
+    font-size: 14px;
+    background-color: #9a62e6;
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 2.5rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    text-align: center;
+    outline: none;
+    border-radius: 5rem;
+  }
+}

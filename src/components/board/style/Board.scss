@@ -1,0 +1,122 @@
+.Board {
+  .BoardDiv {
+    display: flex;
+    font-size: 1.5rem !important;
+    font-weight: 900;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    button {
+      font-weight: bold;
+
+      color: white;
+      font-size: 14px;
+      background-color: #9a62e6;
+      cursor: pointer;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      height: 2.5rem;
+      padding-left: 1.25rem;
+      padding-right: 1.25rem;
+      text-align: center;
+      outline: none;
+      border-radius: 5rem;
+    }
+  }
+}
+
+.BoardTitel {
+  border-radius: 5px 5px 5px 5px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 10px 10px 10px;
+  margin-bottom: 30px;
+
+  background-color: white;
+  height: 1089px;
+  max-height: 1089px;
+}
+.tbl_type {
+  thead {
+    width: 100%;
+    .BoardTr {
+      height: 50px;
+      border-bottom: 1px solid rgb(231, 231, 229);
+
+      th {
+        text-align: center;
+        font-size: 14px;
+      }
+      th:nth-child(1) {
+      }
+      th:nth-child(2) {
+      }
+    }
+  }
+}
+.tbl_type {
+  border: none;
+  color: #868e96;
+  font-weight: bold;
+  width: 100%;
+
+  .BoardTbody {
+    white-space: nowrap;
+    border: none;
+    color: #868e96;
+    font-weight: bold;
+    width: 100%;
+
+    tr {
+      border-bottom: 1px solid rgb(231, 231, 229);
+      width: 100%;
+      td {
+        text-align: center;
+
+        font-size: 14px;
+        padding: 15px 0px 15px 0px;
+      }
+      td:nth-child(1) {
+        width: 10%;
+      }
+      td:nth-child(2) {
+        text-align: start;
+        margin: 10px 0px 10px 20px;
+        font-size: 13px;
+        right: 20px;
+        max-width: 150px;
+        color: black;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        height: 20px;
+        a {
+          font-size: 13px;
+          right: 20px;
+          width: 90%;
+
+          text-overflow: ellipsis;
+          overflow: hidden;
+          height: 20px;
+        }
+      }
+      td:nth-child(3) {
+        width: 13%;
+      }
+      td:nth-child(4) {
+        width: 10%;
+      }
+      td:nth-child(5) {
+        width: 10%;
+      }
+    }
+  }
+}
+.CoinEndDiv1 {
+  .CoinEndDiv2 {
+    width: 100%;
+    font-size: 14px;
+    display: flex;
+    letter-spacing: 13px;
+    justify-content: center;
+    font-weight: bold;
+  }
+}
