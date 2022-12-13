@@ -105,7 +105,7 @@ const BoardUpdate = ({ lcategory, mcategory }) => {
             <button
               className="Write_button2"
               type="button"
-              onclick={() => {
+              onClick={() => {
                 navigate(-1);
               }}
             >

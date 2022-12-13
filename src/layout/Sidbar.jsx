@@ -157,10 +157,7 @@ const Sidbar = () => {
                           : { color: "blue" }
                       }
                     >
-                      {" "}
-                      {(test[0].signed_change_rate.toFixed(3) * 100).toFixed(
-                        2
-                      )}{" "}
+                      {(test[0].signed_change_rate.toFixed(3) * 100).toFixed(2)}
                       %
                     </span>
                   </div>
@@ -284,14 +281,13 @@ const Sidbar = () => {
                   <span class="first_name">코스피</span>
                   <div class="aaa1">
                     <div>
-                      {" "}
                       <span>{kospi.value}</span>
                       <span
                         style={
                           kospi.avg > 0 ? { color: "red" } : { color: "blue" }
                         }
                       >
-                        {kospi.avg} %
+                        {kospi.avg.toFixed(2)} %
                       </span>
                     </div>
                     <div>
@@ -322,7 +318,7 @@ const Sidbar = () => {
                               : { color: "blue" }
                           }
                         >
-                          {kosdaq.avg} %
+                          {kosdaq.avg.toFixed(2)} %
                         </span>
                       </div>
                       <div>
@@ -356,7 +352,7 @@ const Sidbar = () => {
                           samsung.avg > 0 ? { color: "red" } : { color: "blue" }
                         }
                       >
-                        {samsung.avg} %
+                        {samsung.avg.toFixed(2)} %
                       </span>
                     </div>
                     <div>

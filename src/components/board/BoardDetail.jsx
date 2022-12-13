@@ -8,6 +8,7 @@ import { BACK_URL } from "../../config";
 const BoardDetail = ({ lcategory, mcategory, boardList }) => {
   const { boardid } = useParams();
   const navigate = useNavigate();
+  const backnavigate = useNavigate();
   // 게시글 상세내용
   const [boardDetail, setboardDetail] = useState([]);
   // 댓글 작성
@@ -155,10 +156,16 @@ const BoardDetail = ({ lcategory, mcategory, boardList }) => {
         <div className="DetailPage_List_cjah_div">
           <div className="DetailPage_List_cjah">{boardDetail.contents}</div>
         </div>
-      </div>{" "}
-      <div className="sdsdaw4efr34">
-        <ArrowBackIcon className="icon" /> &nbsp; 목록으로
       </div>
+      <button
+        className="sdsdaw4efr34"
+        type="button"
+        onClick={() => {
+          backnavigate(-1);
+        }}
+      >
+        <ArrowBackIcon className="icon" /> &nbsp; 목록으로
+      </button>
       <div className="DetailPageList1">
         <div className="DetailPage_Booot">
           <div className="DetailPage_BoootMaindiv">
