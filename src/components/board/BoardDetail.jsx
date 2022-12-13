@@ -58,7 +58,7 @@ const BoardDetail = ({ lcategory, mcategory, boardList }) => {
   const deleteList = async () => {
     try {
       const data = await axios({
-        url: `${BACK_URL}board/${lcategory}/${mcategory}//delete`,
+        url: `${BACK_URL}board/${lcategory}/${mcategory}/delete`,
         method: "DELETE",
         data: {
           id: boardid,
@@ -130,7 +130,7 @@ const BoardDetail = ({ lcategory, mcategory, boardList }) => {
                 <>
                   <div className="Deletebuttonor">
                     <a
-                      href={`${BACK_URL}board/${lcategory}/${mcategory}/update/
+                      href={`/Board/${lcategory}/${mcategory}/update/
                         ${boardDetail.id}`}
                     >
                       수정
