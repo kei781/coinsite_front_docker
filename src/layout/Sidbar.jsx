@@ -120,7 +120,6 @@ const Sidbar = () => {
             >
               <div class="aaaaaaa">
                 <div class="img_box">
-                  {" "}
                   <img
                     class="logo_img"
                     src="https://s3-symbol-logo.tradingview.com/crypto/XTVCBTC.svg"
@@ -129,7 +128,6 @@ const Sidbar = () => {
                 <span class="first_name">BTC</span>
                 <div class="aaa1">
                   <div>
-                    {" "}
                     <span>
                       {test[0].opening_price
                         .toString()
@@ -168,7 +166,6 @@ const Sidbar = () => {
               <div>
                 <div class="aaaaaaa">
                   <div class="img_box">
-                    {" "}
                     <img
                       class="logo_img"
                       src="https://s3-symbol-logo.tradingview.com/crypto/XTVCETH.svg"
@@ -177,12 +174,11 @@ const Sidbar = () => {
                   <span class="first_name">ETH</span>
                   <div class="aaa1">
                     <div>
-                      {" "}
                       <span>
                         {test[1].opening_price
                           .toString()
-                          .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}{" "}
-                        원{" "}
+                          .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
+                        원
                       </span>
                     </div>
                     <div>
@@ -195,8 +191,8 @@ const Sidbar = () => {
                       >
                         {test[1].signed_change_price
                           .toString()
-                          .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}{" "}
-                        원{" "}
+                          .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
+                        원
                       </span>
                       <span
                         style={
@@ -205,10 +201,9 @@ const Sidbar = () => {
                             : { color: "blue" }
                         }
                       >
-                        {" "}
                         {(test[1].signed_change_rate.toFixed(3) * 100).toFixed(
                           2
-                        )}{" "}
+                        )}
                         %
                       </span>
                     </div>
@@ -226,12 +221,11 @@ const Sidbar = () => {
                 <span class="first_name">XRP</span>
                 <div class="aaa1">
                   <div>
-                    {" "}
                     <span>
                       {test[2].opening_price
                         .toString()
-                        .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}{" "}
-                      원{" "}
+                        .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
+                      원
                     </span>
                   </div>
                   <div>
@@ -244,8 +238,8 @@ const Sidbar = () => {
                     >
                       {test[2].signed_change_price
                         .toString()
-                        .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}{" "}
-                      원{" "}
+                        .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
+                      원
                     </span>
                     <span
                       style={
@@ -254,10 +248,7 @@ const Sidbar = () => {
                           : { color: "blue" }
                       }
                     >
-                      {" "}
-                      {(test[2].signed_change_rate.toFixed(3) * 100).toFixed(
-                        2
-                      )}{" "}
+                      {(test[2].signed_change_rate.toFixed(3) * 100).toFixed(2)}
                       %
                     </span>
                   </div>
@@ -300,7 +291,6 @@ const Sidbar = () => {
                 <div>
                   <div class="aaaaaaa">
                     <div class="img_box">
-                      {" "}
                       <img
                         class="logo_img"
                         src="https://s3-symbol-logo.tradingview.com/country/KR.svg"
@@ -309,7 +299,6 @@ const Sidbar = () => {
                     <span class="first_name">코스닥</span>
                     <div class="aaa1">
                       <div>
-                        {" "}
                         <span>{kosdaq.value}</span>
                         <span
                           style={
@@ -331,7 +320,6 @@ const Sidbar = () => {
                 <div class="border_line"></div>
                 <div class="aaaaaaa">
                   <div class="img_box">
-                    {" "}
                     <img
                       class="logo_img_sam"
                       src="https://www.samsung.com/sec/static/_images/common/logo_samsung_black.svg"
@@ -340,11 +328,10 @@ const Sidbar = () => {
                   <span class="first_name">삼성증권</span>
                   <div class="aaa1">
                     <div>
-                      {" "}
                       <span>
                         {samsung.value
                           .toString()
-                          .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}{" "}
+                          .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
                         원
                       </span>
                       <span
@@ -352,7 +339,7 @@ const Sidbar = () => {
                           samsung.avg > 0 ? { color: "red" } : { color: "blue" }
                         }
                       >
-                        {samsung.avg.toFixed(2)} %
+                        {samsung.avg} %
                       </span>
                     </div>
                     <div>
@@ -382,7 +369,6 @@ const Sidbar = () => {
                   <span class="first_name">카카오</span>
                   <div class="aaa1">
                     <div>
-                      {" "}
                       <span>
                         {kakao.value
                           .toString()

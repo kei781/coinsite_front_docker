@@ -1,6 +1,4 @@
 import React, { useState, useEffect } from "react";
-
-import LanguageIcon from "@mui/icons-material/Language";
 import axios from "axios";
 import ZoomInIcon from "@mui/icons-material/ZoomIn";
 import { useNavigate, Link } from "react-router-dom";
