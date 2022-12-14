@@ -226,6 +226,7 @@ const Navbar = () => {
                                 "userid",
                                 lonned.data.userId
                               );
+                              sessionStorage.setItem("role", lonned.data.role);
                             }}
                           >
                             {" "}

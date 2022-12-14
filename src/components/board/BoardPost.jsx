@@ -47,8 +47,7 @@ const BoardPost = ({ lcategory, mcategory }) => {
           type="button"
           onClick={() => {
             navigate(-1);
-          }}
-        >
+          }}>
           <h1>
             <ArrowBackIcon className="icon" />
             &nbsp; 돌아가기
@@ -91,16 +90,22 @@ const BoardPost = ({ lcategory, mcategory }) => {
               type="button"
               onClick={() => {
                 navigate(-1);
-              }}
-            >
+              }}>
               돌아기기
             </button>
             <button
               className="Write_button1"
               onClick={() => {
+                if (subject === "") {
+                  alert("제목을 입력해주세요");
+                  return;
+                }
+                if (contents === "") {
+                  alert("내용을 입력해주세요");
+                  return;
+                }
                 post();
-              }}
-            >
+              }}>
               작성 하기
             </button>
           </div>

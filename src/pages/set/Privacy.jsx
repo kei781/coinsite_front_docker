@@ -35,8 +35,7 @@ const Privacy = () => {
         onClick={() => {
           console.log(userName);
           console.log(userId);
-        }}
-      ></button>
+        }}></button>
       <div className="top">
         <h1>회원 정보 수정 / 회원 탈퇴</h1>
         <h2></h2>
@@ -54,21 +53,18 @@ const Privacy = () => {
       <div className="bloc-tabs10">
         <button
           className={toggleState === 1 ? "tabs active-tabs" : "tabs"}
-          onClick={() => toggleTab(1)}
-        >
-          회원정보 변경
+          onClick={() => toggleTab(1)}>
+          비밀번호 변경
         </button>
         <button
           className={toggleState === 2 ? "tabs active-tabs" : "tabs"}
-          onClick={() => toggleTab(2)}
-        >
+          onClick={() => toggleTab(2)}>
           회원 탈퇴
         </button>
       </div>
       <div className="content-tabs">
         <div
-          className={toggleState === 1 ? "content  active-content" : "content"}
-        >
+          className={toggleState === 1 ? "content  active-content" : "content"}>
           <div className="botton">
             <div className="right">
               <div className="bottonMain">회원 정보 변경</div>
@@ -152,8 +148,7 @@ const Privacy = () => {
                       setLonned(lonned.data);
                       alert("비밀번호를 확인해주세요");
                     }
-                  }}
-                >
+                  }}>
                   수정하기
                 </button>
               </div>
@@ -162,8 +157,7 @@ const Privacy = () => {
         </div>
       </div>
       <div
-        className={toggleState === 2 ? "content  active-content" : "content"}
-      >
+        className={toggleState === 2 ? "content  active-content" : "content"}>
         <div className="botton1">
           <div className="right1">
             <div className="bottonMain">회원 탈퇴</div>
@@ -218,8 +212,7 @@ const Privacy = () => {
                     alert("비밀번호를 확인하세요");
                     window.location.reload();
                   }
-                }}
-              >
+                }}>
                 회원탈퇴
               </button>
             </div>

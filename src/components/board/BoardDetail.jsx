@@ -51,10 +51,24 @@ const BoardDetail = ({ lcategory, mcategory, boardList }) => {
     };
     getCommentData();
   }, []);
-
-  const aaa = sessionStorage.getItem("userid") === boardDetail.author;
-
-  const bbb = (ccc) => sessionStorage.getItem("userid") === ccc;
+  let aaa = false;
+  if (
+    sessionStorage.getItem("userid") === boardDetail.author ||
+    sessionStorage.getItem("role") == "ADMIN"
+  ) {
+    aaa = true;
+  }
+  let bbb = false;
+  if (
+    sessionStorage.getItem("userid") === boardDetail.author ||
+    sessionStorage.getItem("role") == "ADMIN"
+  ) {
+    bbb = true;
+  }
+  let ccc = false;
+  if (sessionStorage.getItem("userid") === boardDetail.author) {
+    ccc = true;
+  }
 
   const deleteList = async () => {
     try {
@@ -126,16 +140,21 @@ const BoardDetail = ({ lcategory, mcategory, boardList }) => {
               <span>{boardDetail.date}</span>
               <span>조회수 : </span>
               <span>{boardDetail.views}</span>
-
-              {aaa ? (
-                <>
-                  <div className="Deletebuttonor">
+              <div className="Deletebuttonor">
+                {ccc ? (
+                  <>
                     <a
                       href={`/Board/${lcategory}/${mcategory}/update/
                         ${boardDetail.id}`}
                     >
                       수정
                     </a>
+                  </>
+                ) : (
+                  <></>
+                )}
+                {aaa ? (
+                  <>
                     <button
                       className="DetailPageButton2"
                       onClick={() => {
@@ -144,11 +163,11 @@ const BoardDetail = ({ lcategory, mcategory, boardList }) => {
                     >
                       삭제
                     </button>
-                  </div>
-                </>
-              ) : (
-                <></>
-              )}
+                  </>
+                ) : (
+                  <></>
+                )}
+              </div>
             </div>
           </div>
         </div>
@@ -182,7 +201,7 @@ const BoardDetail = ({ lcategory, mcategory, boardList }) => {
                 <div className="DetailPageTddiv">
                   <div>{list.contents} </div>
                   <div>
-                    {bbb(list.author) ? (
+                    {bbb ? (
                       <>
                         <button
                           onClick={() => {

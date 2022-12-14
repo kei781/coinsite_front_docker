@@ -28,7 +28,7 @@ const BoardUpdate = ({ lcategory, mcategory }) => {
       });
       setBoardText(data.data);
 
-      if (data.data === true) {
+      if (data.data === data.data) {
         alert("수정완료");
         navigate(-1);
         console.log(data.data);
@@ -77,7 +77,6 @@ const BoardUpdate = ({ lcategory, mcategory }) => {
                 defaultValue={boardtext.subject}
                 onChange={(e) => {
                   setSubject(e.target.value);
-                  console.log(e.target.value);
                 }}
               />
             </div>
@@ -97,9 +96,18 @@ const BoardUpdate = ({ lcategory, mcategory }) => {
             <button
               className="Write_button1"
               onClick={() => {
+                if (boardtext.subject === subject) {
+                  alert("수정할 내용을 변경해주세요");
+
+                  return;
+                }
+                if (boardtext.contents === contents) {
+                  alert("수정할 내용을 변경해주세요");
+                  return;
+                }
+
                 patch();
-              }}
-            >
+              }}>
               수정 하기
             </button>
             <button
@@ -107,8 +115,7 @@ const BoardUpdate = ({ lcategory, mcategory }) => {
               type="button"
               onClick={() => {
                 navigate(-1);
-              }}
-            >
+              }}>
               돌아기기
             </button>
           </div>
