@@ -59,22 +59,11 @@
   margin-top: 20px;
 }
 
-.DetailPage_Booot {
-  width: 100%;
-  .DetailPage_BoootMaindiv {
-    width: 100%;
-    font-size: 17px;
-    font-weight: 900;
-    margin-bottom: 10px;
-    display: flex;
-    padding: 15px 0px 5px 20px;
-  }
-}
-
 .DetailPage-div {
   width: 100%;
   display: flex;
   margin-top: 20px;
+
   padding: 0px 20px 10px 20px;
   .DetailPage-mimee {
     display: block;
@@ -89,36 +78,13 @@
   }
 }
 
-.DetailPageTd {
-  text-align: left;
-  border: 1px solid red;
-
-  span:nth-child(1) {
-    width: 100%;
-    font-size: 14px;
-    font-weight: 900;
-    margin-top: 30px;
-  }
-  span:nth-child(2) {
-    width: 100%;
-    font-size: 13px;
-    color: #868e96;
-    margin-top: 30px;
-  }
-}
 .DetailPage_List_cjah_div {
   max-height: 100%;
 
   min-height: 200px;
 }
 .DetailPageList1 {
-  border-radius: 5px 5px 5px 5px;
-
-  box-shadow: rgba(0, 0, 0, 0.02) 0px 10px 10px 10px;
   margin-bottom: 30px;
-  background-color: white;
-
-  width: 100%;
 }
 .DetailPage_button1 {
   font-weight: bold;
@@ -175,30 +141,7 @@
     margin-bottom: 5px;
   }
 }
-.DetailPageTddiv {
-  width: 100%;
 
-  min-width: 758px;
-  display: flex;
-  height: 30px;
-
-  padding: 0px 20px 0px 20px;
-
-  div:nth-child(1) {
-    width: 98%;
-    border-bottom: 1px solid #e5e7eb;
-    font-size: 13px;
-    font-weight: bold;
-    margin-top: 3px;
-  }
-
-  div:nth-child(2) {
-    border-bottom: 1px solid #e5e7eb;
-  }
-}
-.DetailPageTd_Span1 {
-  padding: 10px 0px 0px 20px;
-}
 .DetailPageButtonend {
   height: 50px;
   text-align: end;
@@ -215,5 +158,53 @@
   .DetailPageButton2 {
     font-weight: bold;
     margin-left: 10px;
+  }
+}
+.DetailPageList1 {
+  width: 100%;
+
+  .DetailPage_Booot {
+    .DetailPage_BoootMaindiv {
+      width: 100%;
+      font-size: 17px;
+      font-weight: 900;
+      margin-bottom: 10px;
+      display: flex;
+      padding: 15px 0px 5px 20px;
+    }
+    .DetailPage_BoootList {
+      .DetailPageTd {
+        .DetailPageTd_Span1 {
+          align-items: center;
+          margin: 10px 0px 0px 0px;
+          span:nth-child(1) {
+            margin-right: 10px;
+            align-items: center;
+            font-size: 14px;
+          }
+          span:nth-child(2) {
+            width: 100%;
+
+            font-size: 13px;
+            color: #868e96;
+          }
+        }
+        .DetailPageTddiv {
+          display: flex;
+
+          align-items: center;
+          div:nth-child(1) {
+            font-size: 13px;
+            font-weight: bold;
+            width: 100%;
+          }
+          div:nth-child(2) {
+            text-align: end;
+            font-size: 13px;
+            font-weight: bold;
+          }
+        }
+      }
+    }
   }
 }
