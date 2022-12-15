@@ -15,7 +15,6 @@ const BoardDetail = ({ lcategory, mcategory, boardList }) => {
   const [comment, setComment] = useState("");
   // 댓글 리스트
   const [comList, setComList] = useState([]);
-  const [boardtext, setBoardText] = useState([]);
   boardList.sort(function (a, b) {
     return b.id - a.id;
   });
@@ -54,14 +53,14 @@ const BoardDetail = ({ lcategory, mcategory, boardList }) => {
   let aaa = false;
   if (
     sessionStorage.getItem("userid") === boardDetail.author ||
-    sessionStorage.getItem("role") == "ADMIN"
+    sessionStorage.getItem("role") === "ADMIN"
   ) {
     aaa = true;
   }
   let bbb = false;
   if (
-    sessionStorage.getItem("userid") === boardDetail.author ||
-    sessionStorage.getItem("role") == "ADMIN"
+    sessionStorage.getItem("userid") === comList.author ||
+    sessionStorage.getItem("role") === "ADMIN"
   ) {
     bbb = true;
   }
@@ -201,7 +200,8 @@ const BoardDetail = ({ lcategory, mcategory, boardList }) => {
                 <div className="DetailPageTddiv">
                   <div>{list.contents} </div>
                   <div>
-                    {bbb ? (
+                    {sessionStorage.getItem("userid") === list.author ||
+                    sessionStorage.getItem("role") === "ADMIN" ? (
                       <>
                         <button
                           onClick={() => {
@@ -231,7 +231,6 @@ const BoardDetail = ({ lcategory, mcategory, boardList }) => {
             />
           </div>
           <div className="DetailPageButtonend">
-            {" "}
             <button
               className="DetailPage_button1"
               onClick={() => {
