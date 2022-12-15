@@ -5,7 +5,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import { BACK_URL } from "../../config";
 
-const BoardDetail = ({ lcategory, mcategory, boardList }) => {
+const BoardDetail = ({ lcategory, mcategory, boardList, setBoardList }) => {
   const { boardid } = useParams();
   const navigate = useNavigate();
   const backnavigate = useNavigate();
@@ -15,6 +15,7 @@ const BoardDetail = ({ lcategory, mcategory, boardList }) => {
   const [comment, setComment] = useState("");
   // 댓글 리스트
   const [comList, setComList] = useState([]);
+  const [boardtext, setBoardText] = useState([]);
   boardList.sort(function (a, b) {
     return b.id - a.id;
   });
@@ -53,14 +54,14 @@ const BoardDetail = ({ lcategory, mcategory, boardList }) => {
   let aaa = false;
   if (
     sessionStorage.getItem("userid") === boardDetail.author ||
-    sessionStorage.getItem("role") === "ADMIN"
+    sessionStorage.getItem("role") == "ADMIN"
   ) {
     aaa = true;
   }
   let bbb = false;
   if (
-    sessionStorage.getItem("userid") === comList.author ||
-    sessionStorage.getItem("role") === "ADMIN"
+    sessionStorage.getItem("userid") === boardDetail.author ||
+    sessionStorage.getItem("role") == "ADMIN"
   ) {
     bbb = true;
   }
@@ -144,7 +145,7 @@ const BoardDetail = ({ lcategory, mcategory, boardList }) => {
                   <>
                     <a
                       href={`/Board/${lcategory}/${mcategory}/update/
-                        ${boardid}`}
+                        ${boardDetail.id}`}
                     >
                       수정
                     </a>
@@ -172,7 +173,7 @@ const BoardDetail = ({ lcategory, mcategory, boardList }) => {
         </div>
 
         <div className="DetailPage_List_cjah_div">
-          <div className="DetailPage_List_cjah">{boardDetail.contents}</div>
+          <p className="DetailPage_List_cjah">{boardDetail.contents}</p>
         </div>
       </div>
       <button
@@ -190,18 +191,18 @@ const BoardDetail = ({ lcategory, mcategory, boardList }) => {
             <div>댓글</div>
           </div>
           <hr className="DetailPageHr" />
-          <tbody className="DetailPage_BoootList">
+          <div className="DetailPage_BoootList">
             {comList.map((list) => (
-              <tr className="DetailPageTd" key={list.id}>
+              <div className="DetailPageTd" key={list.id}>
                 <div className="DetailPageTd_Span1">
                   <span>{list.author} &nbsp;</span>
                   <span>{list.date}</span>
                 </div>
                 <div className="DetailPageTddiv">
                   <div>{list.contents} </div>
+
                   <div>
-                    {sessionStorage.getItem("userid") === list.author ||
-                    sessionStorage.getItem("role") === "ADMIN" ? (
+                    {bbb ? (
                       <>
                         <button
                           onClick={() => {
@@ -217,9 +218,10 @@ const BoardDetail = ({ lcategory, mcategory, boardList }) => {
                     )}
                   </div>
                 </div>
-              </tr>
+                <hr className="DetailPageHr" />
+              </div>
             ))}
-          </tbody>
+          </div>
           <div className="DetailPage-div">
             <input
               className="DetailPage-mimee"
@@ -231,6 +233,7 @@ const BoardDetail = ({ lcategory, mcategory, boardList }) => {
             />
           </div>
           <div className="DetailPageButtonend">
+            {" "}
             <button
               className="DetailPage_button1"
               onClick={() => {

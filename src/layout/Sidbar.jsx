@@ -95,7 +95,6 @@ const Sidbar = () => {
   return (
     <div class="Sidbar">
       <div className="Sidbarss">
-        {" "}
         <div className="container">
           <div className="bloc-tabs">
             <button

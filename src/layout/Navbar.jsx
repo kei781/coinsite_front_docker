@@ -213,7 +213,6 @@ const Navbar = () => {
                                   "입력하신 정보를 다시한번 확인하여주세요."
                                 );
                               }
-                              console.log(lonned);
                               sessionStorage.setItem(
                                 "logined",
                                 lonned.data.userName
@@ -229,8 +228,7 @@ const Navbar = () => {
                               sessionStorage.setItem("role", lonned.data.role);
                             }}
                           >
-                            {" "}
-                            로그인{" "}
+                            로그인
                           </label>
                         </div>
                         <div className="socialBox">
@@ -269,7 +267,7 @@ const Navbar = () => {
 
                 <SignUp />
               </div>
-            )}{" "}
+            )}
           </div>
         </div>
       </div>
