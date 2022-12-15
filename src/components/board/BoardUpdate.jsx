@@ -27,7 +27,7 @@ const BoardUpdate = ({ lcategory, mcategory }) => {
       });
       setBoardText(data.data);
 
-      if (data.data === data.data) {
+      if (data.data === true) {
         alert("수정완료");
         navigate(-1);
         console.log(data.data);
