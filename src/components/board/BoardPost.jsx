@@ -42,7 +42,6 @@ const BoardPost = ({ lcategory, mcategory }) => {
   }, []);
   return (
     <div className="select-MainDiv">
-      <a href="">
         <button
           type="button"
           onClick={() => {
@@ -53,7 +52,6 @@ const BoardPost = ({ lcategory, mcategory }) => {
             &nbsp; 돌아가기
           </h1>
         </button>
-      </a>
       <div class="con">
         <div class="article-write">
           <form>
