@@ -9,7 +9,6 @@ const BoardUpdate = ({ lcategory, mcategory }) => {
   const { boardid } = useParams();
   const [subject, setSubject] = useState("");
   const [author, setAuthor] = useState("");
-  const [lonned, setLonned] = useState(false);
   const [contents, setContents] = useState("");
   const navigate = useNavigate();
   const [boardtext, setBoardText] = useState([]);
@@ -56,13 +55,14 @@ const BoardUpdate = ({ lcategory, mcategory }) => {
           },
         });
         setBoardText(data.data);
+        setContents(data.data.contents);
+        setSubject(data.data.subject);
       } catch (e) {
         console.log(e);
       }
     };
     getData();
   }, []);
-
   return (
     <div className="select-MainDiv">
       <div class="con">
@@ -74,7 +74,7 @@ const BoardUpdate = ({ lcategory, mcategory }) => {
                 className="write-title"
                 type="text"
                 placeholder="제목을 입력해주세요"
-                defaultValue={boardtext.subject}
+                defaultValue={subject}
                 onChange={(e) => {
                   setSubject(e.target.value);
                 }}
@@ -85,7 +85,7 @@ const BoardUpdate = ({ lcategory, mcategory }) => {
               <textarea
                 className="write-mimee"
                 type="text"
-                defaultValue={boardtext.contents}
+                defaultValue={contents}
                 onChange={(e) => {
                   setContents(e.target.value);
                 }}
@@ -96,18 +96,9 @@ const BoardUpdate = ({ lcategory, mcategory }) => {
             <button
               className="Write_button1"
               onClick={() => {
-                if (boardtext.subject === subject) {
-                  alert("수정할 내용을 변경해주세요");
-
-                  return;
-                }
-                if (boardtext.contents === contents) {
-                  alert("수정할 내용을 변경해주세요");
-                  return;
-                }
-
                 patch();
-              }}>
+              }}
+            >
               수정 하기
             </button>
             <button
@@ -115,7 +106,8 @@ const BoardUpdate = ({ lcategory, mcategory }) => {
               type="button"
               onClick={() => {
                 navigate(-1);
-              }}>
+              }}
+            >
               돌아기기
             </button>
           </div>

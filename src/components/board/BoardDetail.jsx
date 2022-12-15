@@ -144,7 +144,7 @@ const BoardDetail = ({ lcategory, mcategory, boardList }) => {
                   <>
                     <a
                       href={`/Board/${lcategory}/${mcategory}/update/
-                        ${boardDetail.id}`}
+                        ${boardid}`}
                     >
                       수정
                     </a>
