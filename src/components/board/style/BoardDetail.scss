@@ -47,9 +47,10 @@
 }
 .DetailPage_List_cjah {
   width: 100%;
-
+  white-space: pre-wrap;
   margin: 20px;
   font-size: 14px;
+  flex-direction: column;
 }
 .DetailPageButton {
   width: 100%;
@@ -164,7 +165,7 @@
   padding-bottom: 1rem;
   border: 1px;
   padding: 10px 10px 10px 20px;
-  border-top: 1px solid #e5e7eb;
+
   color: #868e96;
   margin-bottom: 30px;
   font-weight: bold;
@@ -183,8 +184,6 @@
 
   padding: 0px 20px 0px 20px;
 
-  button {
-  }
   div:nth-child(1) {
     width: 98%;
     border-bottom: 1px solid #e5e7eb;
