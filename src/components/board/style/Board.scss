@@ -32,7 +32,6 @@
   margin-bottom: 30px;
 
   background-color: white;
-  height: 1089px;
   max-height: 1089px;
 }
 .tbl_type {
@@ -100,6 +99,7 @@
       }
       td:nth-child(3) {
         width: 13%;
+        padding: 15px 5px;
       }
       td:nth-child(4) {
         width: 10%;
