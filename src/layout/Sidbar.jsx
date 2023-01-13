@@ -273,136 +273,140 @@ const Sidbar = () => {
                 className={
                   toggleState === 2 ? "content  active-content" : "content"
                 }>
-                <div class="aaaaaaa">
-                  <div class="img_box">
-                    <img
-                      class="logo_img"
-                      src="https://s3-symbol-logo.tradingview.com/crypto/XTVCBTC.svg"
-                    />
-                  </div>
-                  <span class="first_name">BTC</span>
-                  <div class="aaa1">
-                    <div>
-                      <span>
-                        {test[0].opening_price
-                          .toString()
-                          .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}{" "}
-                        원{" "}
-                      </span>
-                    </div>
-                    <div className="adasfj3">
-                      <div
-                        style={
-                          test[0].signed_change_price > 0
-                            ? { color: "red" }
-                            : { color: "blue" }
-                        }>
-                        {test[0].signed_change_price
-                          .toString()
-                          .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}{" "}
-                        원{" "}
+                <div class="border_line">
+                  <div class="tbl_type">
+                    <div class="aaaaaaa">
+                      <div class="img_box">
+                        <img
+                          class="logo_img"
+                          src="https://s3-symbol-logo.tradingview.com/crypto/XTVCBTC.svg"
+                        />
                       </div>
-                      <div
-                        style={
-                          test[0].signed_change_rate > 0
-                            ? { color: "red" }
-                            : { color: "blue" }
-                        }>
-                        {(test[0].signed_change_rate.toFixed(3) * 100).toFixed(
-                          2
-                        )}
-                        %
+                      <span class="first_name">BTC</span>
+                      <div class="aaa1">
+                        <div>
+                          <span>
+                            {test[0].opening_price
+                              .toString()
+                              .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}{" "}
+                            원{" "}
+                          </span>
+                        </div>
+                        <div className="adasfj3">
+                          <div
+                            style={
+                              test[0].signed_change_price > 0
+                                ? { color: "red" }
+                                : { color: "blue" }
+                            }>
+                            {test[0].signed_change_price
+                              .toString()
+                              .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}{" "}
+                            원{" "}
+                          </div>
+                          <div
+                            style={
+                              test[0].signed_change_rate > 0
+                                ? { color: "red" }
+                                : { color: "blue" }
+                            }>
+                            {(
+                              test[0].signed_change_rate.toFixed(3) * 100
+                            ).toFixed(2)}
+                            %
+                          </div>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </div>
 
-                <div class="border_line"></div>
-                <div>
-                  <div class="aaaaaaa">
-                    <div class="img_box">
-                      <img
-                        class="logo_img"
-                        src="https://s3-symbol-logo.tradingview.com/crypto/XTVCETH.svg"
-                      />
-                    </div>
-                    <span class="first_name">ETH</span>
-                    <div class="aaa1">
-                      <div>
-                        <span>
-                          {test[1].opening_price
-                            .toString()
-                            .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
-                          원
-                        </span>
-                      </div>
-                      <div className="adasfj3">
-                        <div
-                          style={
-                            test[1].signed_change_price > 0
-                              ? { color: "red" }
-                              : { color: "blue" }
-                          }>
-                          {test[1].signed_change_price
-                            .toString()
-                            .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
-                          원
-                        </div>
-                        <div
-                          style={
-                            test[1].signed_change_rate > 0
-                              ? { color: "red" }
-                              : { color: "blue" }
-                          }>
-                          {(
-                            test[1].signed_change_rate.toFixed(3) * 100
-                          ).toFixed(2)}
-                          %
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="border_line"></div>
-                <div class="aaaaaaa">
-                  <div class="img_box">
-                    <img
-                      class="logo_img"
-                      src="https://static.upbit.com/logos/XRP.png"
-                    />
-                  </div>
-                  <span class="first_name">XRP</span>
-                  <div class="aaa1">
+                    <div class="border_line"></div>
                     <div>
-                      <span>
-                        {test[2].opening_price
-                          .toString()
-                          .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
-                        원
-                      </span>
-                    </div>
-                    <div className="adasfj3">
-                      <div
-                        style={
-                          test[2].signed_change_price > 0
-                            ? { color: "red" }
-                            : { color: "blue" }
-                        }>
-                        {test[2].signed_change_price
-                          .toString()
-                          .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
-                        원
+                      <div class="aaaaaaa">
+                        <div class="img_box">
+                          <img
+                            class="logo_img"
+                            src="https://s3-symbol-logo.tradingview.com/crypto/XTVCETH.svg"
+                          />
+                        </div>
+                        <span class="first_name">ETH</span>
+                        <div class="aaa1">
+                          <div>
+                            <span>
+                              {test[1].opening_price
+                                .toString()
+                                .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
+                              원
+                            </span>
+                          </div>
+                          <div className="adasfj3">
+                            <div
+                              style={
+                                test[1].signed_change_price > 0
+                                  ? { color: "red" }
+                                  : { color: "blue" }
+                              }>
+                              {test[1].signed_change_price
+                                .toString()
+                                .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
+                              원
+                            </div>
+                            <div
+                              style={
+                                test[1].signed_change_rate > 0
+                                  ? { color: "red" }
+                                  : { color: "blue" }
+                              }>
+                              {(
+                                test[1].signed_change_rate.toFixed(3) * 100
+                              ).toFixed(2)}
+                              %
+                            </div>
+                          </div>
+                        </div>
                       </div>
-                      <div
-                        style={
-                          test[2].signed_change_rate > 0
-                            ? { color: "red" }
-                            : { color: "blue" }
-                        }>
-                        {(test[2].signed_change_rate.toFixed(3) * 100).toFixed(
-                          2
-                        )}
-                        %
+                    </div>
+                    <div class="border_line"></div>
+                    <div class="aaaaaaa">
+                      <div class="img_box">
+                        <img
+                          class="logo_img"
+                          src="https://static.upbit.com/logos/XRP.png"
+                        />
+                      </div>
+                      <span class="first_name">XRP</span>
+                      <div class="aaa1">
+                        <div>
+                          <span>
+                            {test[2].opening_price
+                              .toString()
+                              .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
+                            원
+                          </span>
+                        </div>
+                        <div className="adasfj3">
+                          <div
+                            style={
+                              test[2].signed_change_price > 0
+                                ? { color: "red" }
+                                : { color: "blue" }
+                            }>
+                            {test[2].signed_change_price
+                              .toString()
+                              .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
+                            원
+                          </div>
+                          <div
+                            style={
+                              test[2].signed_change_rate > 0
+                                ? { color: "red" }
+                                : { color: "blue" }
+                            }>
+                            {(
+                              test[2].signed_change_rate.toFixed(3) * 100
+                            ).toFixed(2)}
+                            %
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>

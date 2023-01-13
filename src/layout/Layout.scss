@@ -376,7 +376,6 @@ p {
 .border_line {
   background-color: #f0f3fa;
   height: 1px;
-  margin: 0 10px;
 }
 .Newsimg {
   font-weight: bold;
@@ -491,9 +490,8 @@ p {
     display: flex;
     margin-top: 30px;
     li {
-      width: 100px;
       text-align: center;
-
+      margin: 16px;
       margin-top: 18px;
       font-size: 15px;
       min-height: 20px;
@@ -509,6 +507,7 @@ p {
   background-color: white;
   border-radius: 50px 50px;
   display: flex;
+  border: none;
   margin-top: 7px;
   margin-bottom: 20px;
   input {
@@ -519,7 +518,7 @@ p {
     border-radius: 50px 50px;
   }
   input:focus {
-    border: none;
+    outline: none;
   }
   button {
   }

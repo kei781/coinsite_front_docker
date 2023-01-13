@@ -46,7 +46,6 @@
     }
 
     .input-forms-item {
-      padding: 7px 0;
       .error-message {
         font-size: 1rem;
         color: blue;
@@ -67,7 +66,9 @@
   height: 100vh;
   display: flex;
 }
-
+.py-4 {
+  text-align: center;
+}
 .sdasds343 {
   border: 1px solid #e6e3e3;
 }
@@ -199,9 +200,6 @@ li {
   color: rgb(133, 132, 132);
   font-weight: bold;
   margin: 0 auto;
-}
-.py-4 {
-  text-align: center;
 }
 
 .font {
