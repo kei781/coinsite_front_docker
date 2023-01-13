@@ -27,7 +27,7 @@ const BoardPost = ({ lcategory, mcategory }) => {
         alert("작성완료");
         navigate(-1);
       } else if (data.data === false) {
-        alert("접근이 불가능 합니다");
+        alert("관리자 기능 접근 불가");
       }
     } catch (e) {
       console.log(e);
@@ -40,18 +40,19 @@ const BoardPost = ({ lcategory, mcategory }) => {
       setAuthor(sessionStorage.getItem("userid"));
     }
   }, []);
+
   return (
     <div className="select-MainDiv">
-        <button
-          type="button"
-          onClick={() => {
-            navigate(-1);
-          }}>
-          <h1>
-            <ArrowBackIcon className="icon" />
-            &nbsp; 돌아가기
-          </h1>
-        </button>
+      <button
+        type="button"
+        onClick={() => {
+          navigate(-1);
+        }}>
+        <h1>
+          <ArrowBackIcon className="icon" />
+          &nbsp; 돌아가기
+        </h1>
+      </button>
       <div class="con">
         <div class="article-write">
           <form>

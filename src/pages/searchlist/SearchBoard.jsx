@@ -6,43 +6,48 @@ const SearchBoard = ({ boardList, postPerPage, currentPage }) => {
   return (
     <>
       <tbody className="BoardTbody10">
-        {boardList.slice(offset, offset + postPerPage).map(
-          (
-            data // 각 페이지 첫 게시글 부터 마지막 게시글
-          ) => (
-            <div className="djdjfl23" key={data.id}>
-              <div>
-                <a
-                  href={
-                    "/Board/" +
-                    data.lcategory +
-                    "/" +
-                    data.mcategory +
-                    "/detail/" +
-                    data.id
-                  }>
-                  {data.subject}
-                </a>
+        <div className="boardtbody11">
+          {boardList.slice(offset, offset + postPerPage).map(
+            (
+              data // 각 페이지 첫 게시글 부터 마지막 게시글
+            ) => (
+              <div className="djdjfl23" key={data.id}>
+                <div>
+                  <a
+                    href={
+                      "/Board/" +
+                      data.lcategory +
+                      "/" +
+                      data.mcategory +
+                      "/detail/" +
+                      data.id
+                    }
+                  >
+                    {data.subject}
+                  </a>
+                </div>
+                <span> {data.author}</span>
+                <span> {data.date}</span>
+                <span>조회수 : {data.views}</span>
+                <div>
+                  <a
+                    href={
+                      "/Board/" +
+                      data.lcategory +
+                      "/" +
+                      data.mcategory +
+                      "/detail/" +
+                      data.id
+                    }
+                  >
+                    {data.contents}
+                  </a>
+                </div>
+                <hr />
               </div>
-              <span> {data.author}</span>
-              <span> {data.date}</span>
-              <span>조회수 : {data.views}</span>
-              <div>
-                <a
-                  href={
-                    "/Board/" +
-                    data.lcategory +
-                    "/" +
-                    data.mcategory +
-                    "/detail/" +
-                    data.id
-                  }>
-                  {data.contents}
-                </a>
-              </div>
-            </div>
-          )
-        )}
+            )
+          )}
+        </div>
       </tbody>
     </>
   );

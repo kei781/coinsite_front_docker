@@ -2,11 +2,10 @@
   max-width: 1300px;
   margin: 0 auto;
   display: flex;
-  width: 100%;
+
   .Layoutsson {
     border: 1px solid rgb(236, 234, 234);
     height: 100vh;
-    width: 0%;
   }
   .asdasd {
     width: 300px;
@@ -14,8 +13,9 @@
     margin: 30px;
   }
   .Sidbar {
-    width: 100%;
+    width: 300px;
     .Sidbarss {
+      border-radius: 5px;
       box-shadow: rgba(0, 0, 0, 0.1) 10px 10px 100px 10px;
     }
     .Sidbarss1 {
@@ -34,20 +34,23 @@
       }
     }
     .Sidbarbanner {
-      width: 100%;
       margin-bottom: 20px;
       margin-right: 10px;
       color: #9a62e6;
+      width: 300px;
+
       img {
-        width: 100%;
+        width: 300px;
+        border-radius: 5px;
       }
     }
     .SidbarNotice {
-      border-radius: 5px 5px 5px 5px;
+      border-radius: 5px;
       box-shadow: rgba(0, 0, 0, 0.1) 10px 10px 100px 10px;
       background-color: white;
       margin-bottom: 20px;
       height: 240px;
+
       div {
         font-size: 15px;
         font-weight: 600;
@@ -98,7 +101,8 @@
     .advertisement {
       box-shadow: rgba(0, 0, 0, 0.05) 0 6px 24px;
       img {
-        width: 100%;
+        border-radius: 5px;
+        width: 300px;
       }
     }
   }
@@ -107,15 +111,13 @@ body {
   background-color: #fafafa;
 }
 .Contents {
-  width: 70%;
   padding: 30px;
 }
 .footer_maindav {
-  width: 100%;
   margin-top: 60px;
   background-color: white;
   height: 60px;
-  width: 100%;
+
   line-height: 60px;
   color: rgb(160, 160, 160);
   border-top: 1px solid #dee5e7;
@@ -123,7 +125,6 @@ body {
 
   .footer_div11 {
     margin-left: 0%;
-    width: 100%;
     text-align: center;
     align-items: center;
 
@@ -137,114 +138,54 @@ body {
   }
 }
 
-.navbar {
-  height: 70px;
-  border-bottom: 0.5px solid rgb(231, 228, 228);
-  display: flex;
-  align-items: center;
-  font-size: 14px;
-  color: #555;
-  font-weight: bold;
-  text-align: center;
-  background-color: #212529;
-  color: #868e96;
-  margin-right: 30px;
-
-  .Heder_Loging_button {
-    border: none;
-  }
-
-  .wrapper {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-
-    height: 100%;
-    max-width: 1200px;
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
-    margin-left: auto;
-    margin-right: auto;
-
-    .items {
-      display: flex;
-      padding: 20px;
-
-      align-items: center;
-
-      .item {
-        display: flex;
-
-        font-size: 18px;
-        align-items: center;
-
-        .icon {
-          font-size: 20px;
-        }
-      }
-    }
-  }
-}
-.search1 {
-  input {
-    margin: 5px 0px 0px 10px;
-    text-align: center;
-    align-items: center;
-    background-color: #212529;
-  }
-}
-.Hader_Login1 {
-  display: flex;
-  align-items: center;
-  text-align: center;
-  margin: 0px 0px 0px 0px;
-  width: 180px;
-}
-
 .Login {
-  width: 100%;
-}
-
-.text-lg {
-  text-align: center;
+  text-align: right;
+  width: 100px;
 }
 
 p {
   .Login_input1 {
+    color: rgb(133, 132, 132);
     margin-top: 10px;
-    margin-bottom: 60px;
-
-    border-bottom: 1px solid #999999;
+    text-align: left;
+    margin-bottom: 20px;
   }
   .Login_input {
-    margin-top: 20px;
-    margin-bottom: 0px;
-    border-bottom: 1px solid #999999;
+    margin-top: 30px;
+
+    color: rgb(133, 132, 132);
+    text-align: left;
+    margin-bottom: 30px;
   }
 
   .loginId {
     width: 100%;
-    padding: 9px 12px;
-    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    height: 50px;
+    border-radius: 4px 4px 0px 0px;
+    border: 1px solid #e6e3e3;
   }
   .loginPw {
-    text-align: center;
-    padding: 9px 12px;
     width: 100%;
+    margin-top: 20px;
+    padding: 20px;
+    height: 50px;
+    border-radius: 4px 4px 0px 0px;
+    border: 1px solid #e6e3e3;
   }
 
   .loginBtn {
+    border-color: #9a62e6;
+    background-color: #9a62e6;
+    text-align: center;
+    margin: 30px 0;
     width: 100%;
-    font-size: 14px;
-    padding: 20px 30px;
-    background-color: black;
+    height: 50px;
+    font-size: 18px;
     color: white;
-    align-items: center;
-    line-height: 1px;
-    margin-top: 20px;
-    margin-bottom: 12px;
-    border-radius: 3px;
-    border-style: none;
+    font-weight: bold;
+    border-radius: 5px 5px 5px 5px;
   }
 }
 .modal {
@@ -253,108 +194,41 @@ p {
   }
 }
 
-.socialBox {
-  margin-bottom: 30px;
-  .kakao {
-    background-color: #feec34;
-    border-color: #feec34;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
-    margin-bottom: 10px;
-    border-radius: 3px;
-    .kakaoLogo {
-      width: 24px;
-      height: 25px;
-    }
-    .kakaoText {
-      width: 300px;
-      font-size: 15px;
-      text-align: center;
-      display: inline-block;
-      box-sizing: border-box;
-    }
-  }
+.kakao {
+  display: flex;
+  align-items: center;
+  padding: 0px 20px 0px 0px;
 }
-
+.facebook {
+  display: flex;
+  align-items: center;
+  padding: 0px 20px 0px 0px;
+}
+.Google {
+  display: flex;
+  align-items: center;
+}
+.kakaoLogo {
+  width: 40px;
+  border-radius: 50%;
+}
+.facebookLogo {
+  width: 40px;
+  border-radius: 50%;
+}
+.GoogleLogo {
+  width: 40px;
+  border-radius: 50%;
+}
 .socialBox {
-  margin-bottom: 20px;
-  .Google {
-    background-color: white;
-    height: 40px;
-    display: flex;
-    border: 1px solid #dcdcdc;
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
-    margin-bottom: 10px;
-    border-radius: 3px;
-    margin-top: 10px;
-
-    .GoogleLogo {
-      width: 24px;
-      height: 25px;
-    }
-    .GoogleText {
-      width: 300px;
-      font-size: 15px;
-      text-align: center;
-      display: inline-block;
-      box-sizing: border-box;
-    }
-  }
-
-  .kakao {
-    background-color: #feec34;
-    border-color: #feec34;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
-    margin-bottom: 10px;
-    border-radius: 3px;
-
-    .kakaoLogo {
-      width: 24px;
-      height: 25px;
-    }
-    .kakaoText {
-      width: 300px;
-      font-size: 15px;
-      text-align: center;
-      display: inline-block;
-      box-sizing: border-box;
-    }
-  }
-
-  .facebook {
-    background-color: #3880ce;
-    border-color: #21538a;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    box-sizing: border-box;
-    color: #fff;
-    border-radius: 3px;
-    > .facebookText {
-      padding-top: 12px;
-      width: 310px;
-      color: #fff;
-      font-size: 15px;
-      text-align: center;
-      box-sizing: border-box;
-    }
-    .facebookLogo {
-      padding-top: 7px;
-      width: 24px;
-      align-items: center;
-      margin-left: 7px;
-      height: 30px;
-    }
-  }
+  display: flex;
+  text-align: center;
+  padding: 20px;
+  margin: 0 auto;
+}
+.socialBox1 {
+  margin: 0 auto;
+  display: flex;
 }
 
 .autoLogin {
@@ -367,31 +241,19 @@ p {
   font-size: 14px;
 }
 .LoginNamedaci {
-  width: 100%;
-  flex: 2;
-  font-size: 14px;
-  margin-left: 0px;
+  text-align: end;
 }
-.navbar_span {
-  font-size: 17px;
-  margin-right: 5px;
+
+.LoginNamedaci:hover {
+  color: white;
 }
-.menu {
-  .flex {
-    li {
-      a {
-      }
-      a:hover {
-        color: white;
-      }
-    }
-  }
-}
+
 .navbarRogo {
-  margin-right: 20px;
-  margin-top: 4px;
+  text-align: end;
+  width: 120px;
 }
 .container {
+  padding: 0px 20px 0px 20px;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -427,8 +289,7 @@ p {
 
 .content {
   background: white;
-  width: 100%;
-  height: 100%;
+
   display: none;
 }
 .content h2 {
@@ -441,36 +302,18 @@ p {
   margin-bottom: 5px;
 }
 .content p {
-  width: 100%;
   height: 300px;
 }
 .active-content {
   display: block;
 }
-.cointable {
-  thead {
-    tr {
-      font-size: 13px;
-      th:nth-child(1) {
-        width: 20%;
-      }
-      th:nth-child(2) {
-        width: 20%;
-      }
-      th:nth-child(3) {
-        width: 20%;
-      }
-      th:nth-child(4) {
-        width: 20%;
-      }
-    }
-  }
-}
+
 .ssdmjvnslkeuh3 {
   height: 500px;
 }
 
 .aaaaaaa {
+  height: 50px;
   display: flex;
   align-items: center;
   font-size: 12px;
@@ -478,18 +321,27 @@ p {
   color: #868e96;
 
   .first_name {
-    width: 50px;
     white-space: nowrap;
   }
   .aaa1 {
     margin-left: auto;
     margin-right: 0;
-    text-align: right;
-  }
-  div {
-    span {
-      padding: 0 5px;
+    text-align: end;
+
+    div {
+      span {
+      }
     }
+  }
+  .adasfj3 {
+    display: flex;
+    div:nth-child(1) {
+      width: 100px;
+    }
+    div:nth-child(2) {
+      width: 60px;
+    }
+
     .span_high {
       color: red;
     }
@@ -498,23 +350,25 @@ p {
     }
   }
   .img_box {
-    width: 50px;
-    height: 50px;
+    margin-right: 10px;
+    width: 40px;
+
     .logo_img {
       border-radius: 50%;
-      width: 70%;
+      width: 40px;
+
       margin: 0 auto;
       margin-top: 5px;
     }
+
     .logo_img_sam {
-      width: 80%;
       margin: 0 auto;
-      margin-top: 22px;
+
+      width: 40px;
     }
     .logo_img_kakao {
-      width: 80%;
       margin: 0 auto;
-      margin-top: 18px;
+      width: 40px;
     }
   }
 }
@@ -528,7 +382,6 @@ p {
   font-weight: bold;
 }
 .Newsimgdiv {
-  width: 100%;
   a:nth-child(1) {
     margin-top: 10px;
   }
@@ -536,4 +389,145 @@ p {
 
 .navbar_span :hover {
   color: white;
+}
+
+///////////////////////////////
+///
+///
+///
+///
+///
+///
+///
+///
+///
+///
+
+.navbar_span1 {
+  width: 30px;
+  height: 100%;
+
+  text-align: center;
+  a {
+    height: 100%;
+  }
+}
+.LoginNamedaci {
+  height: 100%;
+  text-align: end;
+  width: 70px;
+}
+.navbar_span {
+  width: 145px;
+
+  text-align: end;
+}
+
+.Hader_Login1 {
+  display: flex;
+
+  .Login1 {
+    text-align: end;
+
+    color: #e5e7eb;
+    width: 170px;
+    font-size: 15px;
+    .sadasdar34:hover {
+      color: white;
+      font-weight: bold;
+    }
+  }
+  .SignUp {
+    text-align: end;
+    width: 75px;
+  }
+}
+
+.font-bold {
+  font-weight: 700;
+  color: black;
+  text-align: left;
+  font-size: 22px;
+}
+
+.asdaskjdha {
+  color: rgb(133, 132, 132);
+  text-align: center;
+}
+.btnasd2 {
+  margin: 0 auto;
+}
+.asdasdasd3424 {
+  color: rgb(133, 132, 132);
+  font-weight: bold;
+  text-align: center;
+}
+.imfasdask {
+  height: 220px;
+}
+
+.navbar {
+  min-width: 1250px;
+
+  display: flex;
+  text-align: center;
+  background-color: #212529;
+
+  .wrapper {
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+
+    height: 70px;
+    font-size: 14px;
+    color: rgb(212, 211, 211);
+    font-weight: bold;
+  }
+}
+.menubar1 {
+  width: 930px;
+
+  .navbarul {
+    display: flex;
+    margin-top: 30px;
+    li {
+      width: 100px;
+      text-align: center;
+
+      margin-top: 18px;
+      font-size: 15px;
+      min-height: 20px;
+    }
+    li:hover {
+      font-weight: bold;
+      color: white;
+    }
+  }
+}
+
+.search1 {
+  background-color: white;
+  border-radius: 50px 50px;
+  display: flex;
+  margin-top: 7px;
+  margin-bottom: 20px;
+  input {
+    color: black;
+    text-align: start;
+    padding: 5px 0px 5px 20px;
+    width: 200px;
+    border-radius: 50px 50px;
+  }
+  input:focus {
+    border: none;
+  }
+  button {
+  }
+}
+.idnasla {
+  color: black;
+}
+.items {
+  width: 250px;
+  margin-top: 10px;
 }

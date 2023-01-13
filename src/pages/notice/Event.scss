@@ -1,0 +1,145 @@
+.Event {
+  -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+  box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+  margin: 40px;
+  padding: 50px;
+
+  .meailinputton {
+    width: 100%;
+    margin-bottom: 20px;
+
+    input {
+      width: 300px;
+      margin: 0px 30px 0px 0px;
+
+      border: 1px solid rgba(201, 201, 201, 0.47);
+    }
+    button {
+      font-weight: bold;
+      margin-right: 20px;
+    }
+    .EventListbutton {
+      text-align: end;
+      float: right;
+    }
+  }
+
+  .EventTitel {
+    margin-bottom: 50px;
+    width: 100%;
+    border: 5px solid rgba(201, 201, 201, 0.47);
+    .EventList {
+      text-align: center;
+      align-items: center;
+      div {
+        margin-top: 20px;
+        margin-bottom: 30px;
+        a {
+          text-align: center;
+          padding: 20px;
+          font-weight: bold;
+        }
+      }
+    }
+    .EventDiv {
+      width: 100%;
+      text-align: center;
+
+      h1 {
+        font-size: 25px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        font-weight: bold;
+      }
+      h2 {
+        font-size: 15px;
+        height: 40px;
+
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.tbl_type a {
+  color: #383838;
+  text-decoration: none;
+}
+.tbl_type {
+  width: 100%;
+
+  tbody {
+    white-space: nowrap;
+    tr {
+      td:nth-child(1) {
+        width: 5%;
+      }
+      td:nth-child(2) {
+        width: 100%;
+      }
+      td:nth-child(3) {
+        width: 100px;
+      }
+      td:nth-child(4) {
+        width: 100px;
+      }
+      td:nth-child(5) {
+        width: 70px;
+      }
+    }
+  }
+
+  color: #666;
+  font-size: 12px;
+}
+.tbl_type caption,
+.tbl_type .frm label {
+  display: none;
+}
+.tbl_type th {
+  padding: 5px 0 4px;
+  font-size: 15px;
+  border-top: solid 1px #999;
+  border-bottom: solid 1px #b2b2b2;
+
+  padding: 10px;
+  color: #333;
+  font-weight: bold;
+  line-height: 18px;
+  vertical-align: top;
+}
+.tbl_type td,
+tr {
+  padding: 8px 0 5px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 700;
+}
+.tbl_type .frm {
+  padding: 0;
+  text-align: center;
+}
+
+.tbl_type .num,
+.tbl_type .date,
+.tbl_type .hit {
+  padding: 0;
+
+  font-size: 11px;
+  line-height: normal;
+}
+.tbl_type .title {
+  text-align: left;
+  width: 100%;
+  display: flex;
+}
+.EventEndDiv1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+
+  a {
+    padding: 5px;
+  }
+}
