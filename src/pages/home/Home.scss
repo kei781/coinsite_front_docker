@@ -1,6 +1,4 @@
 .Home {
-  width: 100%;
-
   .AnTokNews {
     border-radius: 5px 5px 5px 5px;
     margin-bottom: 30px;
@@ -18,35 +16,37 @@
 
   .Homemiddr {
     display: flex;
+
     justify-content: space-between;
     .Homemiddrtitle {
+      margin-right: 20px;
       border-radius: 5px 5px 5px 5px;
       box-shadow: rgba(0, 0, 0, 0.02) 0px 10px 10px 10px;
       margin-bottom: 30px;
       background-color: white;
-      width: 49%;
+      width: 400px;
       height: 280px;
+
       .Homemiddrspan {
-        padding: 11px 00px 11px 20px;
+        padding: 13px 00px 13px 20px;
         font-weight: bold;
-        border-bottom: 1px solid rgb(231, 231, 229);
-        overflow: hidden;
         white-space: nowrap;
-        margin: 0px 30px 0px 0px;
-        width: 95%;
+        display: flex;
+        width: 380px;
         span:nth-child(1) {
           margin-right: 10px;
           font-size: 13px;
           font-weight: bold;
 
+          white-space: nowrap;
           color: #9a62e6;
         }
         a:nth-child(2) {
+          overflow: hidden;
+          text-overflow: ellipsis;
+
           font-size: 13px;
           font-weight: 900;
-          overflow: hidden;
-
-          white-space: nowrap;
         }
       }
       .Homemiddrss {
@@ -61,31 +61,29 @@
       box-shadow: rgba(0, 0, 0, 0.02) 0px 10px 10px 10px;
       margin-bottom: 30px;
       background-color: white;
-      width: 49%;
+      width: 400px;
       height: 280px;
       .Homemiddrspan {
-        padding: 11px 00px 11px 20px;
-
+        padding: 13px 00px 13px 20px;
         font-weight: bold;
-        border-bottom: 1px solid rgb(231, 231, 229);
-        overflow: hidden;
         white-space: nowrap;
-        margin: 0px 30px 0px 0px;
-        width: 95%;
+        display: flex;
+        width: 380px;
 
         span:nth-child(1) {
+          color: #9a62e6;
           margin-right: 10px;
           font-size: 13px;
           font-weight: bold;
 
-          color: #9a62e6;
+          white-space: nowrap;
         }
         a:nth-child(2) {
+          overflow: hidden;
+          text-overflow: ellipsis;
+
           font-size: 13px;
           font-weight: 900;
-          overflow: hidden;
-
-          white-space: nowrap;
         }
       }
       .Homemiddrmddless {
@@ -105,16 +103,16 @@
   }
 }
 .Newslist {
-  width: 100%;
   padding: 20px 10px 20px 10px;
   display: flex;
 
   justify-content: space-around;
   .Newsimg {
-    width: 30%;
+    width: 230px;
     img {
       display: inline-block;
-      width: 100%;
+
+      width: 230px;
       height: 170px;
       overflow: hidden;
       object-fit: cover;
@@ -136,14 +134,11 @@
     background-color: white;
     width: 100%;
     .Homelistspan {
-      width: 97%;
-
       font-weight: bolder;
-      border-bottom: 1px solid rgb(231, 231, 229);
       padding: 15px 0px 15px 20px;
       text-overflow: ellipsis;
       overflow: hidden;
-
+      width: 95%;
       a {
         font-size: 13px;
 
@@ -173,35 +168,35 @@
 .Homestock {
   display: flex;
   justify-content: space-between;
+
   .Homestocktitle {
+    margin-right: 20px;
     border-radius: 5px 5px 5px 5px;
     box-shadow: rgba(0, 0, 0, 0.02) 0px 10px 10px 10px;
     margin-bottom: 30px;
     background-color: white;
-    width: 49%;
+    width: 400px;
     height: 280px;
     .Homemiddrspan {
-      padding: 11px 00px 11px 20px;
+      padding: 13px 00px 13px 20px;
       font-weight: bold;
-      border-bottom: 1px solid rgb(231, 231, 229);
-      overflow: hidden;
       white-space: nowrap;
-      margin: 0px 30px 0px 0px;
-      width: 95%;
-
+      display: flex;
+      width: 380px;
       span:nth-child(1) {
         margin-right: 10px;
         font-size: 13px;
         font-weight: bold;
 
+        white-space: nowrap;
         color: #9a62e6;
       }
       a:nth-child(2) {
+        overflow: hidden;
+        text-overflow: ellipsis;
+
         font-size: 13px;
         font-weight: 900;
-        overflow: hidden;
-
-        white-space: nowrap;
       }
     }
     .Homestockss {
@@ -215,30 +210,29 @@
     box-shadow: rgba(0, 0, 0, 0.02) 0px 10px 10px 10px;
     margin-bottom: 30px;
     background-color: white;
-    width: 49%;
+
     height: 280px;
     .Homemiddrspan {
-      padding: 11px 00px 11px 20px;
+      padding: 13px 00px 13px 20px;
       font-weight: bold;
-      border-bottom: 1px solid rgb(231, 231, 229);
-      overflow: hidden;
       white-space: nowrap;
-      margin: 0px 30px 0px 0px;
-      width: 95%;
+      display: flex;
+      width: 400px;
+
       span:nth-child(1) {
         margin-right: 10px;
         font-size: 13px;
-        font-weight: 900;
+        font-weight: bold;
+
         color: #9a62e6;
       }
       a:nth-child(2) {
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        width: 300px;
         font-size: 13px;
         font-weight: 900;
-        max-width: 150px;
-
-        text-overflow: ellipsis;
-        overflow: hidden;
-        height: 20px;
       }
     }
     .Homecoinss {
@@ -262,7 +256,12 @@
   color: #9a62e6;
 }
 .Newsimgdiv {
-  max-width: 240px;
+  text-align: center;
+  width: 230px;
+  padding-left: 5px;
+  padding-right: 5px;
+
+  max-width: 230px;
 
   text-overflow: ellipsis;
   overflow: hidden;

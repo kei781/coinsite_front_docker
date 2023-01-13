@@ -126,6 +126,14 @@ const BoardDetail = ({ lcategory, mcategory, boardList, setBoardList }) => {
     window.location.reload();
   };
 
+  const a = boardDetail.date;
+
+  let b = "";
+
+  if (a) {
+    b = a.replace(/(\d{4})(\d{2})(\d{2})/g, "$1-$2-$3");
+  }
+
   return (
     <div className="DetailPage">
       <div className="DetailPageMain">
@@ -137,7 +145,7 @@ const BoardDetail = ({ lcategory, mcategory, boardList, setBoardList }) => {
             <span>{boardDetail.author}</span>
 
             <div className="asddgiuhi23">
-              <span>{boardDetail.date}</span>
+              <div>{b}</div>
               <span>조회수 : </span>
               <span>{boardDetail.views}</span>
               <div className="Deletebuttonor">
@@ -145,8 +153,7 @@ const BoardDetail = ({ lcategory, mcategory, boardList, setBoardList }) => {
                   <>
                     <a
                       href={`/Board/${lcategory}/${mcategory}/update/
-                        ${boardDetail.id}`}
-                    >
+                        ${boardDetail.id}`}>
                       수정
                     </a>
                   </>
@@ -159,8 +166,7 @@ const BoardDetail = ({ lcategory, mcategory, boardList, setBoardList }) => {
                       className="DetailPageButton2"
                       onClick={() => {
                         deleteList();
-                      }}
-                    >
+                      }}>
                       삭제
                     </button>
                   </>
@@ -181,8 +187,7 @@ const BoardDetail = ({ lcategory, mcategory, boardList, setBoardList }) => {
         type="button"
         onClick={() => {
           backnavigate(-1);
-        }}
-      >
+        }}>
         <ArrowBackIcon className="icon" /> &nbsp; 목록으로
       </button>
       <div className="DetailPageList1">
@@ -196,7 +201,9 @@ const BoardDetail = ({ lcategory, mcategory, boardList, setBoardList }) => {
               <div className="DetailPageTd" key={list.id}>
                 <div className="DetailPageTd_Span1">
                   <span>{list.author} &nbsp;</span>
-                  <span>{list.date}</span>
+                  <span>
+                    {list.date.replace(/(\d{4})(\d{2})(\d{2})/g, "$1-$2-$3")}
+                  </span>
                 </div>
                 <div className="DetailPageTddiv">
                   <div>{list.contents} </div>
@@ -207,8 +214,7 @@ const BoardDetail = ({ lcategory, mcategory, boardList, setBoardList }) => {
                         <button
                           onClick={() => {
                             comdelete(list.id);
-                          }}
-                        >
+                          }}>
                           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; x
                           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         </button>
@@ -238,8 +244,7 @@ const BoardDetail = ({ lcategory, mcategory, boardList, setBoardList }) => {
               className="DetailPage_button1"
               onClick={() => {
                 compost();
-              }}
-            >
+              }}>
               등록
             </button>
           </div>

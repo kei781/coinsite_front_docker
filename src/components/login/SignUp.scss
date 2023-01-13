@@ -1,52 +1,7 @@
 .SignUp {
-  width: 100%;
-  height: 100%;
-}
-
-.text-lg {
   text-align: center;
 }
 
-p {
-  .SignUp_input {
-    margin-top: 10px;
-
-    width: 100%;
-    text-align: center;
-    border-bottom: 1px solid #999999;
-  }
-  .SiguUpBtndiv {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .join_row {
-    text-align: center;
-    width: 100%;
-
-    .Joindiv {
-      margin: 20px 0px 0px 0px;
-      text-align: center;
-    }
-  }
-}
-
-.SignUpBtn1 {
-  width: 100%;
-  height: 0px;
-  font-size: 14px;
-  padding: 17px 30px;
-  cursor: pointer;
-  background-color: black;
-  color: white;
-  line-height: 1px;
-  margin-top: 20px;
-  margin-bottom: 12px;
-  border-radius: 3px;
-  border-style: none;
-}
 @media all and (min-width: 1024px) {
   .input-forms {
     padding: 70px;
@@ -91,7 +46,6 @@ p {
     }
 
     .input-forms-item {
-      padding: 7px 0;
       .error-message {
         font-size: 1rem;
         color: blue;
@@ -102,20 +56,155 @@ p {
 }
 .SignUp {
   .SignUplable {
-    font-weight: bold;
+    font-size: 15px;
     width: 100px;
     color: white;
-    font-size: 14px;
-    background-color: #9a62e6;
-    cursor: pointer;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    height: 2.5rem;
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
-    text-align: center;
-    outline: none;
-    border-radius: 5rem;
   }
+}
+
+.SigUp {
+  height: 100vh;
+  display: flex;
+}
+.py-4 {
+  text-align: center;
+}
+.sdasds343 {
+  border: 1px solid #e6e3e3;
+}
+.Logo {
+  text-align: center;
+
+  .LogoMain {
+    align-items: center;
+    display: flex;
+
+    margin-bottom: 30px;
+    a {
+      display: flex;
+    }
+    span {
+      font-size: 25px;
+
+      font-weight: bold;
+      width: 100%;
+      text-align: start;
+      margin-top: 6px;
+      padding: 0px 0px 0px 0px;
+    }
+    .icon {
+      margin-top: 9px;
+      text-align: end;
+    }
+  }
+}
+
+h3 {
+  width: 100%;
+
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.SignUpssds {
+  color: rgb(133, 132, 132);
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: flex;
+  input {
+    margin-left: 10px;
+    margin-right: 10px;
+    align-items: center;
+  }
+  span:nth-child(3) {
+    color: red;
+    font-size: 13px;
+    margin-left: 10px;
+  }
+  div {
+    text-align: start;
+    align-items: center;
+  }
+}
+
+.SignUpcheckbox {
+  font-size: 14px;
+  padding: 10px;
+  border-radius: 5px 5px 5px 5px;
+  border: 1px solid rgb(234, 237, 239);
+}
+.SignUpcheckboxtitle {
+  text-align: start;
+  padding: 15px;
+}
+.SignUpbutton1 {
+  text-align: center;
+  border-color: #9a62e6;
+  background-color: #9a62e6;
+  margin: 20px 0;
+  width: 100%;
+  height: 50px;
+  font-size: 18px;
+  white-space: pre-line;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px 5px 5px 5px;
+  button {
+    margin-top: 11px;
+  }
+  .SignUpBtn11 {
+    text-align: center;
+    color: rgb(133, 132, 132);
+  }
+}
+.SignUpcheckboxtitle {
+  color: rgb(133, 132, 132);
+}
+.SignUpbutton2 {
+  span {
+    font-size: 13px;
+    margin-right: 10px;
+  }
+  button {
+    font-weight: bold;
+  }
+}
+
+.SigUp_input {
+  color: rgb(133, 132, 132);
+  margin: 30px 0px 10px 0px;
+
+  div {
+    text-align: start;
+  }
+  input {
+    padding: 10px;
+    margin-top: 10px;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+  }
+}
+
+ul {
+  list-style: none;
+  margin: 5px 20px;
+}
+li {
+  margin: 10px 0;
+}
+
+.SignUpBtn11dasd {
+  font-size: 15px;
+  text-align: center;
+  color: rgb(133, 132, 132);
+  font-weight: bold;
+  margin: 0 auto;
+}
+
+.font {
+  font-weight: 700;
+  color: black;
+  text-align: left;
+  font-size: 22px;
 }

@@ -1,7 +1,4 @@
 .Searchlist {
-  height: 100%;
-
-  width: 100%;
   .Searchlist_div {
     input {
       border-color: #cccccc;
@@ -73,7 +70,6 @@
     align-items: center;
   }
   .BoardTbody10 {
-    border: 1px solid red;
   }
 }
 
@@ -83,66 +79,86 @@
 }
 
 .BoardTbody10 {
-  .djdjfl23 {
-    div {
-      width: 100%;
-    }
-    div:nth-child(1) {
-      color: #0c43b7;
-      margin-top: 20px;
-      font-size: 17px;
-      margin-bottom: 5px;
-    }
-    span:nth-child(2) {
-      color: #999 !important;
-      font-size: 12px;
-      margin-right: 10px;
-    }
-    span:nth-child(3) {
-      color: #999 !important;
-      font-size: 12px;
-      margin-right: 10px;
-    }
-    span:nth-child(4) {
-      color: #999 !important;
-      font-size: 12px;
-    }
+  .boardtbody11 {
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 10px 10px 10px;
+    margin-bottom: 30px;
+    background-color: white;
+    padding: 20px;
+    width: 850px;
+    .djdjfl23 {
+      div {
+        width: 100%;
+      }
+      div:nth-child(1) {
+        color: #0c43b7;
+        margin-top: 20px;
+        font-size: 17px;
+        margin-bottom: 5px;
+      }
+      span:nth-child(2) {
+        color: #999 !important;
+        font-size: 12px;
+        margin-right: 10px;
+      }
+      span:nth-child(3) {
+        color: #999 !important;
+        font-size: 12px;
+        margin-right: 10px;
+      }
+      span:nth-child(4) {
+        color: #999 !important;
+        font-size: 12px;
+      }
 
-    div:nth-child(5) {
-      font-weight: 100;
-      font-size: 15px;
-      text-overflow: inherit;
-      overflow: hidden;
-      height: 60px;
-      overflow: hidden;
+      div:nth-child(5) {
+        font-weight: 100;
+        font-size: 15px;
+        text-overflow: inherit;
+        overflow: hidden;
+        height: 60px;
+        overflow: hidden;
+      }
     }
   }
 }
 
 .BoardTbody5 {
-  tr {
-    width: 100%;
+  .boardtobdy5 {
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 10px 10px 10px;
+    margin-bottom: 30px;
+    background-color: white;
+    padding: 20px;
+    width: 850px;
+    tr {
+      width: 100%;
 
-    div {
-    }
-    div:nth-child(1) {
-      color: #0c43b7;
-      margin-top: 20px;
-      font-size: 17px;
-      margin-bottom: 5px;
-      overflow: hidden;
-      height: 20px;
-      max-height: 40px;
-      overflow: hidden;
-    }
-    span:nth-child(2) {
-      color: #999 !important;
-      font-size: 12px;
-      margin-right: 10px;
-    }
-    span:nth-child(3) {
-      color: #999 !important;
-      font-size: 12px;
+      div {
+      }
+      div:nth-child(1) {
+        color: #0c43b7;
+        margin-top: 20px;
+        font-size: 17px;
+        margin-bottom: 5px;
+        overflow: hidden;
+        height: 20px;
+        max-height: 40px;
+        overflow: hidden;
+      }
+      span:nth-child(2) {
+        color: #999 !important;
+        font-size: 12px;
+        margin-right: 10px;
+      }
+      span:nth-child(3) {
+        color: #999 !important;
+        font-size: 12px;
+      }
     }
   }
+}
+
+hr {
+  width: 805px;
 }

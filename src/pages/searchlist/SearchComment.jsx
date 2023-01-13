@@ -6,29 +6,33 @@ const SearchComment = ({ commentList, postPerPage, currentPage2 }) => {
   return (
     <>
       <tbody className="BoardTbody5">
-        {commentList.slice(offset, offset + postPerPage).map(
-          (
-            data // 각 페이지 첫 게시글 부터 마지막 게시글
-          ) => (
-            <tr key={data.id}>
-              <div>
-                <a
-                  href={
-                    "/Board/" +
-                    data.lcategory +
-                    "/" +
-                    data.mcategory +
-                    "/detail/" +
-                    data.boardIndex
-                  }>
-                  {data.contents}
-                </a>
-              </div>
-              <span> {data.author}</span>
-              <span> {data.date}</span>
-            </tr>
-          )
-        )}
+        <div className="boardtobdy5">
+          {commentList.slice(offset, offset + postPerPage).map(
+            (
+              data // 각 페이지 첫 게시글 부터 마지막 게시글
+            ) => (
+              <tr key={data.id}>
+                <div>
+                  <a
+                    href={
+                      "/Board/" +
+                      data.lcategory +
+                      "/" +
+                      data.mcategory +
+                      "/detail/" +
+                      data.boardIndex
+                    }
+                  >
+                    {data.contents}
+                  </a>
+                </div>
+                <span> {data.author}</span>
+                <span> {data.date}</span>
+                <hr />
+              </tr>
+            )
+          )}
+        </div>
       </tbody>
     </>
   );

@@ -32,6 +32,8 @@ const Contents = () => {
           path="/privacy"
           element={<Privacy userId={userId} setUserId={setUserId} />}></Route>
         <Route path="/searchlist" element={<Searchlist />}></Route>
+   
+
       </Routes>
     </div>
   );

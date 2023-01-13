@@ -1,4 +1,9 @@
 .select-MainDiv {
+  button {
+    h1 {
+      margin-left: 30px;
+    }
+  }
   a {
     h1 {
       margin-bottom: 20px;
@@ -110,4 +115,7 @@
   input {
     border: none;
   }
+}
+.select-MainDiv {
+  width: 850px;
 }

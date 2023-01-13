@@ -26,13 +26,15 @@ const Posts = ({ boardList, postPerPage, currentPage }) => {
                     data.mcategory +
                     "/detail/" +
                     data.id
-                  }
-                >
+                  }>
                   {data.subject}
                 </a>
               </td>
               <td> {data.author}</td>
-              <td> {data.date}</td>
+              <td>
+                {" "}
+                {data.date.replace(/(\d{4})(\d{2})(\d{2})/g, "$1-$2-$3")}
+              </td>
               <td> {data.views}</td>
             </tr>
           )

@@ -63,6 +63,7 @@ const BoardUpdate = ({ lcategory, mcategory }) => {
     };
     getData();
   }, []);
+
   return (
     <div className="select-MainDiv">
       <div class="con">
@@ -97,8 +98,7 @@ const BoardUpdate = ({ lcategory, mcategory }) => {
               className="Write_button1"
               onClick={() => {
                 patch();
-              }}
-            >
+              }}>
               수정 하기
             </button>
             <button
@@ -106,8 +106,7 @@ const BoardUpdate = ({ lcategory, mcategory }) => {
               type="button"
               onClick={() => {
                 navigate(-1);
-              }}
-            >
+              }}>
               돌아기기
             </button>
           </div>
