@@ -49,18 +49,44 @@ const BoardList = ({ lcategory, mcategory, boardList, setBoardList }) => {
   const handlePageChange = (page) => {
     setCurrentPage(page);
   };
+  // 권한이 없을경우 특정게시판의 글쓰기 버튼을 안보이게 하는 로직
+  // 권한 = 관리자
+  // 특정게시판 = 공지사항, 패치노트
+  let adminRights = false;
+  if (sessionStorage.getItem("role") == "ADMIN") {
+    adminRights = true;
+  } else if (
+    sessionStorage.getItem("role") != "ADMIN" &&
+    lcategory == "notice" &&
+    mcategory != "n" &&
+    mcategory != "e"
+  ) {
+    adminRights = true;
+  } else if (
+    sessionStorage.getItem("role") != "ADMIN" &&
+    lcategory != "notice"
+  ) {
+    adminRights = true;
+  } else {
+    adminRights = false;
+  }
   return (
     <div class="Board">
       <div className="BoardDiv">
         <h1> {boardTitle[lcategory + "/" + mcategory]}</h1>
-        <button
-          className="BoardListbutton"
-          onClick={() => {
-            registerd();
-          }}
-        >
-          + 글 쓰기
-        </button>
+        {adminRights ? (
+          <>
+            <button
+              className="BoardListbutton"
+              onClick={() => {
+                registerd();
+              }}>
+              + 글 쓰기
+            </button>
+          </>
+        ) : (
+          <></>
+        )}
       </div>
       <div className="BoardTitel">
         <table class="tbl_type">

@@ -350,11 +350,16 @@ p {
       .span_low {
         font-size: 12px;
 
+        margin-right: 30px;
+
         color: blue;
       }
       div:nth-child(1) {
         font-size: 12px;
         width: 50px;
+      }
+      div:nth-child(2) {
+        font-size: 12px;
       }
     }
   }
@@ -404,13 +409,13 @@ p {
 }
 .navbar_span {
   width: 145px;
-
+  height: 28px;
   text-align: end;
 }
 
 .Hader_Login1 {
+  padding: 0px 0px 4px 0px;
   display: flex;
-
   .Login1 {
     text-align: end;
 
@@ -475,6 +480,7 @@ p {
 
   .navbarul {
     display: flex;
+
     margin-top: 30px;
     li {
       text-align: center;
@@ -495,8 +501,8 @@ p {
   border-radius: 50px 50px;
   display: flex;
   border: none;
-  margin-top: 7px;
-  margin-bottom: 20px;
+
+  margin-bottom: 15px;
   input {
     color: black;
     text-align: start;
@@ -515,7 +521,7 @@ p {
 }
 .items {
   width: 250px;
-  margin-top: 10px;
+  margin-top: 15px;
 }
 .adasfj3 {
   font-size: 13px;

@@ -19,6 +19,7 @@ const Posts = ({ boardList, postPerPage, currentPage }) => {
               <td> {data.id}</td>
               <td>
                 <a
+                  className="flkjsdf"
                   href={
                     "/Board/" +
                     data.lcategory +

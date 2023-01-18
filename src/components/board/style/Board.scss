@@ -63,12 +63,13 @@
     color: #868e96;
 
     tr {
+      color: black;
       border-bottom: 1px solid rgb(231, 231, 229);
 
       td {
         text-align: center;
 
-        font-size: 14px;
+        font-size: 15px;
         padding: 15px 0px 15px 0px;
       }
       td:nth-child(1) {
@@ -80,8 +81,9 @@
         font-size: 13px;
         right: 20px;
         max-width: 150px;
-        color: black;
+
         text-overflow: ellipsis;
+
         overflow: hidden;
         height: 20px;
         a {

@@ -108,7 +108,6 @@ const SignUp = () => {
                   onKeyPress={handleOnKeyPress}
                 />
               </div>
-
               {error1 && <div style={{ color: "red" }}>{error1}</div>}
             </div>{" "}
             <div className="SigUp_input">
@@ -124,7 +123,7 @@ const SignUp = () => {
                   onKeyPress={handleOnKeyPress}
                 />
               </div>
-              <br />
+
               <div className="SigUp_input">
                 비밀번호 재입력
                 <input
@@ -139,7 +138,7 @@ const SignUp = () => {
               </div>
               {error && <div style={{ color: "red" }}>{error}</div>}
               <br />
-            </div>{" "}
+            </div>
             <div className="SignUpcheckboxtitle">약관동의</div>
             <div className="SignUpcheckbox">
               <div>
