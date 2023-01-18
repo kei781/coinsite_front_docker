@@ -88,20 +88,26 @@
     width: 850px;
     .djdjfl23 {
       div {
-        width: 100%;
+        width: 800px;
       }
       div:nth-child(1) {
         color: #0c43b7;
         margin-top: 20px;
         font-size: 17px;
+        overflow: hidden;
+
+        width: 800px;
+
         margin-bottom: 5px;
       }
       span:nth-child(2) {
         color: #999 !important;
-        font-size: 12px;
+        font-size: 13px;
         margin-right: 10px;
       }
       span:nth-child(3) {
+        margin-left: 10px;
+
         color: #999 !important;
         font-size: 12px;
         margin-right: 10px;
@@ -131,9 +137,9 @@
     background-color: white;
     padding: 20px;
     width: 850px;
+
     tr {
       width: 100%;
-
       div {
       }
       div:nth-child(1) {

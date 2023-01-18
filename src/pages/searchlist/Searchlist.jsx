@@ -71,23 +71,6 @@ const Searchlist = () => {
   return (
     <div className="Searchlist">
       <div className="Searchlist_div">
-        <input
-          placeholder="검색어를 입력해주세요"
-          type="value"
-          onChange={(e) => {
-            setGggg(e.target.value);
-          }}
-        />
-
-        <button
-          onClick={() => {
-            deleteList();
-            setDeleteListsd();
-            deleteList = { deleteList };
-          }}
-        >
-          검색
-        </button>
         <div className="Searchlistssds3">통합 검색</div>
       </div>
       <div className="Searchlisttitlle">

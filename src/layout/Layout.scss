@@ -15,6 +15,7 @@
   .Sidbar {
     width: 300px;
     .Sidbarss {
+      height: 350px;
       border-radius: 5px;
       box-shadow: rgba(0, 0, 0, 0.1) 10px 10px 100px 10px;
     }
@@ -56,7 +57,6 @@
         font-weight: 600;
       }
       div:nth-child(1) {
-        font-weight: bold;
         padding: 10px 0px 10px 20px;
         border-bottom: 1px solid rgb(231, 231, 229);
       }
@@ -257,7 +257,7 @@ p {
   display: flex;
   flex-direction: column;
   position: relative;
-  height: 260px;
+  height: 100%;
   background-color: white;
   word-break: break-all;
   border: 1px solid #e6e6e6;
@@ -311,68 +311,54 @@ p {
 .ssdmjvnslkeuh3 {
   height: 500px;
 }
-
 .aaaaaaa {
-  height: 50px;
+  margin-top: 5px;
+  margin-bottom: 3px;
   display: flex;
-  align-items: center;
-  font-size: 12px;
-  font-weight: bold;
-  color: #868e96;
 
-  .first_name {
-    white-space: nowrap;
+  .img_box {
+    margin-top: 7px;
+    width: 40px;
+    margin-right: 20px;
+
+    .logo_img {
+      border-radius: 5px;
+      width: 40px;
+    }
   }
   .aaa1 {
-    margin-left: auto;
-    margin-right: 0;
-    text-align: end;
+    width: 190px;
 
-    div {
-      span {
+    .first_name {
+      font-weight: bold;
+      color: black;
+
+      font-size: 13px;
+    }
+    .adasfj3 {
+      display: flex;
+      font-size: 13px;
+
+      .asdasddj3 {
+        font-size: 12px;
+        margin-left: auto;
+      }
+      .span_high {
+        font-size: 12px;
+        color: red;
+      }
+      .span_low {
+        font-size: 12px;
+
+        color: blue;
+      }
+      div:nth-child(1) {
+        font-size: 12px;
+        width: 50px;
       }
     }
   }
-  .adasfj3 {
-    display: flex;
-    div:nth-child(1) {
-      width: 100px;
-    }
-    div:nth-child(2) {
-      width: 60px;
-    }
-
-    .span_high {
-      color: red;
-    }
-    .span_low {
-      color: blue;
-    }
-  }
-  .img_box {
-    margin-right: 10px;
-    width: 40px;
-
-    .logo_img {
-      border-radius: 50%;
-      width: 40px;
-
-      margin: 0 auto;
-      margin-top: 5px;
-    }
-
-    .logo_img_sam {
-      margin: 0 auto;
-
-      width: 40px;
-    }
-    .logo_img_kakao {
-      margin: 0 auto;
-      width: 40px;
-    }
-  }
 }
-
 .border_line {
   background-color: #f0f3fa;
   height: 1px;
@@ -382,7 +368,7 @@ p {
 }
 .Newsimgdiv {
   a:nth-child(1) {
-    margin-top: 10px;
+    margin-top: 20px;
   }
 }
 
@@ -463,6 +449,7 @@ p {
 }
 .imfasdask {
   height: 220px;
+  object-fit: cover;
 }
 
 .navbar {
@@ -529,4 +516,24 @@ p {
 .items {
   width: 250px;
   margin-top: 10px;
+}
+.adasfj3 {
+  font-size: 13px;
+
+  div:nth-child(1) {
+    font-size: 13px;
+    color: #2c2e30;
+  }
+}
+.asdasddj33 {
+  font-size: 12px;
+}
+.asdasddj333 {
+  margin-left: auto;
+  font-size: 12px;
+}
+.asdjeo2p {
+  font-size: 12px;
+  margin-bottom: 3px;
+  color: #2c2e30;
 }

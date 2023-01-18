@@ -21,13 +21,15 @@ const SearchComment = ({ commentList, postPerPage, currentPage2 }) => {
                       data.mcategory +
                       "/detail/" +
                       data.boardIndex
-                    }
-                  >
+                    }>
                     {data.contents}
                   </a>
                 </div>
                 <span> {data.author}</span>
-                <span> {data.date}</span>
+                <span>
+                  {" "}
+                  {data.date.replace(/(\d{4})(\d{2})(\d{2})/g, "$1-$2-$3")}
+                </span>
                 <hr />
               </tr>
             )

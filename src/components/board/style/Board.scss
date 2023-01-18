@@ -33,7 +33,6 @@
   margin-bottom: 30px;
   width: 850px;
   background-color: white;
-  max-height: 1089px;
 }
 .tbl_type {
   thead {
@@ -55,14 +54,13 @@
 .tbl_type {
   border: none;
   color: #868e96;
-  font-weight: bold;
+
   width: 100%;
 
   .BoardTbody {
     white-space: nowrap;
     border: none;
     color: #868e96;
-    font-weight: bold;
 
     tr {
       border-bottom: 1px solid rgb(231, 231, 229);
@@ -115,6 +113,5 @@
     display: flex;
     letter-spacing: 13px;
     justify-content: center;
-    font-weight: bold;
   }
 }

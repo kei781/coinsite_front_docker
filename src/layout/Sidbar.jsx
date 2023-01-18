@@ -1,6 +1,8 @@
 import axios from "axios";
 import React, { useState, useEffect } from "react";
 import KeyboardDoubleArrowRightIcon from "@mui/icons-material/KeyboardDoubleArrowRight";
+import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
+import ArrowDropUpIcon from "@mui/icons-material/ArrowDropUp";
 import "./Layout.scss";
 import { BACK_URL } from "../config";
 const Sidbar = () => {
@@ -135,15 +137,24 @@ const Sidbar = () => {
                         src="https://s3-symbol-logo.tradingview.com/country/KR.svg"
                       />
                     </div>
-                    <span class="first_name">코스피</span>
+
                     <div class="aaa1">
+                      <span class="first_name">코스피</span>
                       <div className="adasfj3">
                         <div>{kospi.value}</div>
                         <div
+                          className="asdasddj3"
                           style={
                             kospi.avg > 0 ? { color: "red" } : { color: "blue" }
                           }>
-                          {kospi.avg.toFixed(2)} %
+                          <span>
+                            {kospi.avg > 0 ? (
+                              <ArrowDropUpIcon />
+                            ) : (
+                              <ArrowDropDownIcon />
+                            )}
+                          </span>
+                          {parseFloat(kospi.avg).toFixed(2)} %
                         </div>
                       </div>
 
@@ -162,17 +173,26 @@ const Sidbar = () => {
                           src="https://s3-symbol-logo.tradingview.com/country/KR.svg"
                         />
                       </div>
-                      <span class="first_name">코스닥</span>
+
                       <div class="aaa1">
+                        <div class="first_name">코스닥</div>
                         <div className="adasfj3">
                           <div>{kosdaq.value}</div>
                           <div
+                            className="asdasddj3"
                             style={
                               kosdaq.avg > 0
                                 ? { color: "red" }
                                 : { color: "blue" }
                             }>
-                            {kosdaq.avg.toFixed(2)} %
+                            <span>
+                              {kosdaq.avg > 0 ? (
+                                <ArrowDropUpIcon />
+                              ) : (
+                                <ArrowDropDownIcon />
+                              )}
+                            </span>
+                            {parseFloat(kosdaq.avg).toFixed(2)} %{" "}
                           </div>
                         </div>
                         <div className="adasfj3">
@@ -186,26 +206,34 @@ const Sidbar = () => {
                   <div class="aaaaaaa">
                     <div class="img_box">
                       <img
-                        class="logo_img_sam"
-                        src="https://www.samsung.com/sec/static/_images/common/logo_samsung_black.svg"
+                        class="logo_img"
+                        src="https://i.postimg.cc/kGbVYJ4w/Samsung-Electronics-png.png"
                       />
                     </div>
-                    <span class="first_name">삼성증권</span>
+
                     <div class="aaa1">
+                      <div class="first_name">삼성전자</div>
                       <div className="adasfj3">
                         <div>
                           {samsung.value
                             .toString()
                             .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
-                          원
                         </div>
                         <div
+                          className="asdasddj3"
                           style={
                             samsung.avg > 0
                               ? { color: "red" }
                               : { color: "blue" }
                           }>
-                          {samsung.avg} %
+                          <span>
+                            {samsung.avg > 0 ? (
+                              <ArrowDropUpIcon />
+                            ) : (
+                              <ArrowDropDownIcon />
+                            )}
+                          </span>
+                          {samsung.avg.toFixed(2)} %
                         </div>
                       </div>
                       <div className="adasfj3">
@@ -213,13 +241,11 @@ const Sidbar = () => {
                           {samsung.high
                             .toString()
                             .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}{" "}
-                          원
                         </div>
                         <div class="span_low">
                           {samsung.low
                             .toString()
                             .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}{" "}
-                          원
                         </div>
                       </div>
                     </div>
@@ -228,24 +254,32 @@ const Sidbar = () => {
                   <div class="aaaaaaa">
                     <div class="img_box">
                       <img
-                        class="logo_img_kakao"
-                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEwAAAAZCAMAAACsCjhdAAAAYFBMVEX/////ygD/ywD/yQD/zAD/yAD/9d3/45j/78X/+u7//fn/+Ob/8cz/xgD/6a7/5Z//8tP/11v/67b/0C7/0j7/34T/7Lz/1E3/zhv/2m7/3Xz/4Yz/+/P/2GH/2Wf/1EfAVPLxAAACIklEQVQ4je2V2W6rMBCGmcUk2GC2sJP0/d/y2B6znaiRKvWyvgCJGX+z/TZJ8qur7+wHq7ZT/gNYAbcP1lTR/QcwhR9hAH+w72Fm/2SqVL/BDnNapdeA6W7bYEZNgdDXQABUZ1dYU5T+pe3DWQHmPfCT3MJOX2Ajkw+QFkBjy8iozzBDPPq3VQBji4gPYfWE1A4jIGcnWM0k6pyb1ScCOJ9hI4Ok+rr7IB1CE2O0PoU7SiyBlQDlpREz8gn2RKou5hafkgKskiGA3WAV4evinPQY3AT2FipZsHXPlbjb6PwVYStye3VOKgh1BZgLNf1nLkPi+SGcjinCHszr7pc1t67rXrzDNIeocRm7OPPAHmYRNlVYpMzDykpxfTSLSLlFOywv4dD1WqtghgArAyGsJnB9ZjfArfYJsDRau/kcZdZI/d54brz5hpIZHZltsOSFJLdaRij78lPPXHdJRN9D3C09c1PahnxDpTdpOPdKvEG/wzKn4fUY4g4zhNuUhyA0gWmUHrlYAjuX6aUjouw22CIybOWzwwIuOyxJxT0lDPWWwGdYYinMyHXG17vOFAbgT1MQzeoqWw9Y0hD78/ZgeHZPUMMV5g/QHArAqRtIiTTc7AHHpZyQ5XYv1BIzV/40ru5WIDXahIsAK1SU5aB8e1J2N4p65O7XsU+R3I5WBmHMpte4K20aX0oWxqaNiVebjnOrmj4L2+KuJLelvV5wv7L+AdvxGDZuaoGFAAAAAElFTkSuQmCC"
+                        class="logo_img"
+                        src="https://i.postimg.cc/3Nv9T09v/kakao.png"
                       />
                     </div>
-                    <span class="first_name">카카오</span>
+
                     <div class="aaa1">
+                      <div class="first_name">카카오</div>
                       <div className="adasfj3">
                         <div>
                           {kakao.value
                             .toString()
                             .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}{" "}
-                          원
                         </div>
                         <div
+                          className="asdasddj3"
                           style={
                             kakao.avg > 0 ? { color: "red" } : { color: "blue" }
                           }>
-                          {kakao.avg} %
+                          <span>
+                            {kakao.avg > 0 ? (
+                              <ArrowDropUpIcon />
+                            ) : (
+                              <ArrowDropDownIcon />
+                            )}
+                          </span>
+                          {parseFloat(kakao.avg).toFixed(2)} %
                         </div>
                       </div>
                       <div className="adasfj3">
@@ -253,13 +287,11 @@ const Sidbar = () => {
                           {kakao.high
                             .toString()
                             .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}{" "}
-                          원
                         </div>
                         <div class="span_low">
                           {kakao.low
                             .toString()
                             .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}{" "}
-                          원
                         </div>
                       </div>
                     </div>
@@ -282,18 +314,19 @@ const Sidbar = () => {
                           src="https://s3-symbol-logo.tradingview.com/crypto/XTVCBTC.svg"
                         />
                       </div>
-                      <span class="first_name">BTC</span>
+
                       <div class="aaa1">
+                        <div class="first_name">BTC</div>
                         <div>
-                          <span>
+                          <div className="asdjeo2p">
                             {test[0].opening_price
                               .toString()
                               .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}{" "}
-                            원{" "}
-                          </span>
+                          </div>
                         </div>
                         <div className="adasfj3">
                           <div
+                            className="asdasddj33"
                             style={
                               test[0].signed_change_price > 0
                                 ? { color: "red" }
@@ -302,19 +335,26 @@ const Sidbar = () => {
                             {test[0].signed_change_price
                               .toString()
                               .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}{" "}
-                            원{" "}
                           </div>
                           <div
+                            className="asdasddj333"
                             style={
                               test[0].signed_change_rate > 0
                                 ? { color: "red" }
                                 : { color: "blue" }
                             }>
+                            <span>
+                              {test[0].signed_change_rate > 0 ? (
+                                <ArrowDropUpIcon />
+                              ) : (
+                                <ArrowDropDownIcon />
+                              )}
+                            </span>
                             {(
                               test[0].signed_change_rate.toFixed(3) * 100
                             ).toFixed(2)}
                             %
-                          </div>
+                          </div>{" "}
                         </div>
                       </div>
                     </div>
@@ -328,18 +368,19 @@ const Sidbar = () => {
                             src="https://s3-symbol-logo.tradingview.com/crypto/XTVCETH.svg"
                           />
                         </div>
-                        <span class="first_name">ETH</span>
+
                         <div class="aaa1">
+                          <div class="first_name">ETH</div>
                           <div>
-                            <span>
+                            <div className="asdjeo2p">
                               {test[1].opening_price
                                 .toString()
                                 .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
-                              원
-                            </span>
+                            </div>
                           </div>
                           <div className="adasfj3">
                             <div
+                              className="asdasddj33"
                               style={
                                 test[1].signed_change_price > 0
                                   ? { color: "red" }
@@ -348,14 +389,21 @@ const Sidbar = () => {
                               {test[1].signed_change_price
                                 .toString()
                                 .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
-                              원
                             </div>
                             <div
+                              className="asdasddj333"
                               style={
                                 test[1].signed_change_rate > 0
                                   ? { color: "red" }
                                   : { color: "blue" }
                               }>
+                              <span>
+                                {test[1].signed_change_rate > 0 ? (
+                                  <ArrowDropUpIcon />
+                                ) : (
+                                  <ArrowDropDownIcon />
+                                )}
+                              </span>
                               {(
                                 test[1].signed_change_rate.toFixed(3) * 100
                               ).toFixed(2)}
@@ -370,21 +418,22 @@ const Sidbar = () => {
                       <div class="img_box">
                         <img
                           class="logo_img"
-                          src="https://static.upbit.com/logos/XRP.png"
+                          src="https://i.postimg.cc/ZqZ41rb1/d1da3e364444683013c6a7ac67d67063.png"
                         />
                       </div>
-                      <span class="first_name">XRP</span>
+
                       <div class="aaa1">
+                        <div class="first_name">XRP</div>
                         <div>
-                          <span>
+                          <div className="asdjeo2p">
                             {test[2].opening_price
                               .toString()
                               .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
-                            원
-                          </span>
+                          </div>
                         </div>
                         <div className="adasfj3">
                           <div
+                            className="asdasddj33"
                             style={
                               test[2].signed_change_price > 0
                                 ? { color: "red" }
@@ -393,14 +442,21 @@ const Sidbar = () => {
                             {test[2].signed_change_price
                               .toString()
                               .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
-                            원
                           </div>
                           <div
+                            className="asdasddj333"
                             style={
                               test[2].signed_change_rate > 0
                                 ? { color: "red" }
                                 : { color: "blue" }
                             }>
+                            <span>
+                              {test[2].signed_change_rate > 0 ? (
+                                <ArrowDropUpIcon />
+                              ) : (
+                                <ArrowDropDownIcon />
+                              )}
+                            </span>
                             {(
                               test[2].signed_change_rate.toFixed(3) * 100
                             ).toFixed(2)}
@@ -409,6 +465,7 @@ const Sidbar = () => {
                         </div>
                       </div>
                     </div>
+                    <div class="border_line"></div>
                   </div>
                 </div>
               </div>

@@ -21,13 +21,15 @@ const SearchBoard = ({ boardList, postPerPage, currentPage }) => {
                       data.mcategory +
                       "/detail/" +
                       data.id
-                    }
-                  >
+                    }>
                     {data.subject}
                   </a>
                 </div>
                 <span> {data.author}</span>
-                <span> {data.date}</span>
+                <span>
+                  {" "}
+                  {data.date.replace(/(\d{4})(\d{2})(\d{2})/g, "$1-$2-$3")}
+                </span>
                 <span>조회수 : {data.views}</span>
                 <div>
                   <a
@@ -38,8 +40,7 @@ const SearchBoard = ({ boardList, postPerPage, currentPage }) => {
                       data.mcategory +
                       "/detail/" +
                       data.id
-                    }
-                  >
+                    }>
                     {data.contents}
                   </a>
                 </div>
