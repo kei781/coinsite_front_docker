@@ -214,7 +214,7 @@ const Sidbar = () => {
                         }
                       >
                         <span>{samsung.avg > 0 ? "▴" : "▾"}</span>
-                        {samsung.avg.toFixed(2)} %
+                        {parseFloat(samsung.avg).toFixed(2)} %
                       </div>
                     </div>
                     <div>
